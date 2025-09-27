@@ -35,8 +35,10 @@
   },
   "name":"BBQ Time",
   "resources":[
-    {"id":{"name":"test","path":"objects/test/test.yy",},},
+    {"id":{"name":"global_vars_obj","path":"objects/global_vars_obj/global_vars_obj.yy",},},
+    {"id":{"name":"Player","path":"objects/Player/Player.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Player_down_spr","path":"sprites/Player_down_spr/Player_down_spr.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
