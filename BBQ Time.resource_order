@@ -1,0 +1,8 @@
+{
+  "FolderOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"obj_parent_btn","order":1,"path":"objects/obj_parent_btn/obj_parent_btn.yy",},
+    {"name":"room_start_gui","order":1,"path":"rooms/room_start_gui/room_start_gui.yy",},
+    {"name":"spr_button","order":1,"path":"sprites/spr_button/spr_button.yy",},
+  ],
+}
