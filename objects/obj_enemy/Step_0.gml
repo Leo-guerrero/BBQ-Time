@@ -18,7 +18,6 @@ switch (cur_state)
 		speed = BASE_SPEED * dt
 		
 		//set animation
-		
 		image_xscale = (target[0]-x > 0) ? 1 : -1;
 	
 		var to_attack = instance_place(x, y, [obj_bbq, obj_player])
