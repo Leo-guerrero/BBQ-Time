@@ -8,7 +8,7 @@ min_spawn_dist_bbq    = 260;
 min_spawn_dist_player = 220;
 
 // Enemy type(s)
-enemy_types   = [ Enemy ];  // add more types if you have them
+enemy_types   = [ obj_enemy ];  // add more types if you have them
 enemy_weights = [ 100 ];              // weights must match types (e.g., [70,25,5])
 
 // Layer to spawn on

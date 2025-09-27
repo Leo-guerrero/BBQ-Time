@@ -1,7 +1,6 @@
 {
   "FolderOrderSettings":[],
   "ResourceOrderSettings":[
-    {"name":"oMobSpawner","order":1,"path":"objects/oMobSpawner/oMobSpawner.yy",},
-    {"name":"po_bbq","order":2,"path":"objects/po_bbq/po_bbq.yy",},
+    {"name":"obj_mob_spawner","order":1,"path":"objects/obj_mob_spawner/obj_mob_spawner.yy",},
   ],
 }

@@ -35,16 +35,15 @@
   },
   "name":"BBQ Time",
   "resources":[
-    {"id":{"name":"BBQ_target","path":"objects/BBQ_target/BBQ_target.yy",},},
     {"id":{"name":"camera","path":"objects/camera/camera.yy",},},
-    {"id":{"name":"Enemy","path":"objects/Enemy/Enemy.yy",},},
     {"id":{"name":"global_vars_obj","path":"objects/global_vars_obj/global_vars_obj.yy",},},
-    {"id":{"name":"oMobSpawner","path":"objects/oMobSpawner/oMobSpawner.yy",},},
-    {"id":{"name":"Player","path":"objects/Player/Player.yy",},},
-    {"id":{"name":"RoomAlan","path":"rooms/RoomAlan/RoomAlan.yy",},},
-    {"id":{"name":"po_bbq","path":"objects/po_bbq/po_bbq.yy",},},
+    {"id":{"name":"obj_bbq","path":"objects/obj_bbq/obj_bbq.yy",},},
+    {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
+    {"id":{"name":"obj_mob_spawner","path":"objects/obj_mob_spawner/obj_mob_spawner.yy",},},
+    {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"test","path":"objects/test/test.yy",},},
-    {"id":{"name":"RyanRoom","path":"rooms/RyanRoom/RyanRoom.yy",},},
+    {"id":{"name":"room_alan","path":"rooms/room_alan/room_alan.yy",},},
+    {"id":{"name":"room_ryan","path":"rooms/room_ryan/room_ryan.yy",},},
     {"id":{"name":"HouseSprite","path":"sprites/HouseSprite/HouseSprite.yy",},},
     {"id":{"name":"Player_down_spr","path":"sprites/Player_down_spr/Player_down_spr.yy",},},
     {"id":{"name":"Sprite2","path":"sprites/Sprite2/Sprite2.yy",},},
@@ -55,11 +54,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-<<<<<<< HEAD
-    {"roomId":{"name":"RoomAlan","path":"rooms/RoomAlan/RoomAlan.yy",},},
-=======
-    {"roomId":{"name":"RyanRoom","path":"rooms/RyanRoom/RyanRoom.yy",},},
->>>>>>> mob_spawn
+    {"roomId":{"name":"room_alan","path":"rooms/room_alan/room_alan.yy",},},
+    {"roomId":{"name":"room_ryan","path":"rooms/room_ryan/room_ryan.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[

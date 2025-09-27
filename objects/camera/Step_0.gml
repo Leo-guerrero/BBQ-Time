@@ -1,5 +1,5 @@
-var target_x = Player.x - (camera_get_view_width(cam) / 2);
-var target_y = Player.y - (camera_get_view_width(cam) / 2);
+var target_x = obj_player.x - (camera_get_view_width(cam) / 2);
+var target_y = obj_player.y - (camera_get_view_width(cam) / 2);
 
 // Smooth follow
 var new_x = lerp(camera_get_view_x(cam), target_x, cam_speed);
