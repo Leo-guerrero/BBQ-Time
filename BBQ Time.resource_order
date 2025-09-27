@@ -1,4 +1,8 @@
 {
   "FolderOrderSettings":[],
-  "ResourceOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"spr_BBQ_health_bar","order":1,"path":"sprites/spr_BBQ_health_bar/spr_BBQ_health_bar.yy",},
+    {"name":"spr_ENEMY_health_bar_back","order":3,"path":"sprites/spr_ENEMY_health_bar_back/spr_ENEMY_health_bar_back.yy",},
+    {"name":"spr_ENEMY_health_bar","order":2,"path":"sprites/spr_ENEMY_health_bar/spr_ENEMY_health_bar.yy",},
+  ],
 }
