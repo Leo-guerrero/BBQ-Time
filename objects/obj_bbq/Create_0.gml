@@ -1,1 +1,1 @@
-hp = 20;
+hp = global.BBQHP;
