@@ -1,4 +1,5 @@
-if(global.Time > 0){
+
+if(global.Time > 0 and room==room_ryan){
 	global.Time--;
 }
 
