@@ -1,4 +1,11 @@
 {
   "FolderOrderSettings":[],
-  "ResourceOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"MapSprites","order":1,"path":"sprites/MapSprites/MapSprites.yy",},
+    {"name":"ObjectMapSprites","order":3,"path":"sprites/ObjectMapSprites/ObjectMapSprites.yy",},
+    {"name":"TreeSprites","order":5,"path":"sprites/TreeSprites/TreeSprites.yy",},
+    {"name":"MapSpritesTileSheet","order":2,"path":"tilesets/MapSpritesTileSheet/MapSpritesTileSheet.yy",},
+    {"name":"ObjectMapTileSet","order":4,"path":"tilesets/ObjectMapTileSet/ObjectMapTileSet.yy",},
+    {"name":"TreeSpritesTileSheet","order":6,"path":"tilesets/TreeSpritesTileSheet/TreeSpritesTileSheet.yy",},
+  ],
 }
