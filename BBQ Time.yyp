@@ -75,10 +75,8 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"room_ryan","path":"rooms/room_ryan/room_ryan.yy",},},
     {"roomId":{"name":"leosRoom","path":"rooms/leosRoom/leosRoom.yy",},},
-    {"roomId":{"name":"room_alan","path":"rooms/room_alan/room_alan.yy",},},
     {"roomId":{"name":"JasonsBedroom","path":"rooms/JasonsBedroom/JasonsBedroom.yy",},},
-
-
+    {"roomId":{"name":"room_alan","path":"rooms/room_alan/room_alan.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[
