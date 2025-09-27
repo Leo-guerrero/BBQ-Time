@@ -17,4 +17,5 @@ up = 0;
 down = 0;
 left = 0;
 right = 0;
-
+attack = mouse_check_button_pressed(mb_left);
+run = keyboard_check(vk_shift);

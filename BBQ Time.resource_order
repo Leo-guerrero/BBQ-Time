@@ -2,5 +2,13 @@
   "FolderOrderSettings":[],
   "ResourceOrderSettings":[
     {"name":"obj_mob_spawner","order":1,"path":"objects/obj_mob_spawner/obj_mob_spawner.yy",},
+    {"name":"leosRoom","order":1,"path":"rooms/leosRoom/leosRoom.yy",},
+    {"name":"attack_down","order":4,"path":"sprites/attack_down/attack_down.yy",},
+    {"name":"attack_left","order":8,"path":"sprites/attack_left/attack_left.yy",},
+    {"name":"attack_right","order":6,"path":"sprites/attack_right/attack_right.yy",},
+    {"name":"attack_up","order":5,"path":"sprites/attack_up/attack_up.yy",},
+    {"name":"Player_left_spr","order":2,"path":"sprites/Player_left_spr/Player_left_spr.yy",},
+    {"name":"Player_right_spr","order":1,"path":"sprites/Player_right_spr/Player_right_spr.yy",},
+    {"name":"Player_up_spr","order":3,"path":"sprites/Player_up_spr/Player_up_spr.yy",},
   ],
 }
