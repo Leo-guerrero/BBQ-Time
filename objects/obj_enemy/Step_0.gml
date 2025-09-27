@@ -4,7 +4,9 @@ var dt =  room_speed/60
 var target = [obj_bbq.x, obj_bbq.y];
 //var target = [po_bbq.x, po_bbq.y];
 direction = point_direction(x, y, target[0], target[1])
-speed = BASE_SPEED * room_speed/60
+
+// TODO vary with time dilation
+image_speed = 0.5
 
 speed = 0
 
@@ -14,11 +16,15 @@ switch (cur_state)
 		var target = [obj_bbq.x, obj_bbq.y];
 		direction = point_direction(x, y, target[0], target[1])
 		speed = BASE_SPEED * dt
+		
+		//set animation
+		
+		image_xscale = (target[0]-x > 0) ? 1 : -1;
 	
-		var bbq = instance_place(x, y, obj_bbq)
+		var to_attack = instance_place(x, y, [obj_bbq, obj_player])
 
-		if (bbq != noone) {
-			bbq.hp -= BASE_DMG;
+		if (to_attack != noone) {
+			to_attack.hp -= BASE_DMG;
 			cur_state = ENEMY_STATE.Recharging
 			cur_cooldown = ATK_COOLDOWN;
 			// add attack animation too
