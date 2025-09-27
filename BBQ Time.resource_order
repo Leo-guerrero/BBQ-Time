@@ -2,5 +2,6 @@
   "FolderOrderSettings":[],
   "ResourceOrderSettings":[
     {"name":"obj_shader","order":1,"path":"objects/obj_shader/obj_shader.yy",},
+    {"name":"obj_test_time","order":2,"path":"objects/obj_test_time/obj_test_time.yy",},
   ],
 }
