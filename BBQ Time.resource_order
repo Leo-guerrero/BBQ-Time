@@ -1,0 +1,6 @@
+{
+  "FolderOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"obj_shader","order":1,"path":"objects/obj_shader/obj_shader.yy",},
+  ],
+}
