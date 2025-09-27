@@ -1,8 +1,15 @@
 {
   "FolderOrderSettings":[],
   "ResourceOrderSettings":[
-    {"name":"obj_parent_btn","order":1,"path":"objects/obj_parent_btn/obj_parent_btn.yy",},
-    {"name":"room_start_gui","order":1,"path":"rooms/room_start_gui/room_start_gui.yy",},
+    {"name":"obj_btn_help_to_menu","order":6,"path":"objects/obj_btn_help_to_menu/obj_btn_help_to_menu.yy",},
+    {"name":"obj_btn_help","order":3,"path":"objects/obj_btn_help/obj_btn_help.yy",},
+    {"name":"obj_btn_parent","order":1,"path":"objects/obj_btn_parent/obj_btn_parent.yy",},
+    {"name":"obj_btn_play","order":2,"path":"objects/obj_btn_play/obj_btn_play.yy",},
+    {"name":"obj_btn_quit","order":4,"path":"objects/obj_btn_quit/obj_btn_quit.yy",},
+    {"name":"obj_controls_text","order":5,"path":"objects/obj_controls_text/obj_controls_text.yy",},
+    {"name":"obj_help_spawner","order":7,"path":"objects/obj_help_spawner/obj_help_spawner.yy",},
+    {"name":"room_menu_help","order":2,"path":"rooms/room_menu_help/room_menu_help.yy",},
+    {"name":"room_menu","order":1,"path":"rooms/room_menu/room_menu.yy",},
     {"name":"spr_button","order":1,"path":"sprites/spr_button/spr_button.yy",},
   ],
 }
