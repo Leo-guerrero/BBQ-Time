@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_bbq",
+  "%Name":"obj_thrown_knife",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_bbq",
+  "name":"obj_thrown_knife",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -31,12 +31,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_bbq",
-    "path":"sprites/spr_bbq/spr_bbq.yy",
+    "name":"spr_knife",
+    "path":"sprites/spr_knife/spr_knife.yy",
   },
-  "spriteMaskId":{
-    "name":"Player_down_spr",
-    "path":"sprites/Player_down_spr/Player_down_spr.yy",
-  },
+  "spriteMaskId":null,
   "visible":true,
 }

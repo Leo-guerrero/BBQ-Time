@@ -39,9 +39,11 @@
     {"id":{"name":"global_vars_obj","path":"objects/global_vars_obj/global_vars_obj.yy",},},
     {"id":{"name":"obj_bbq","path":"objects/obj_bbq/obj_bbq.yy",},},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
+    {"id":{"name":"obj_main_object","path":"objects/obj_main_object/obj_main_object.yy",},},
     {"id":{"name":"obj_mob_spawner","path":"objects/obj_mob_spawner/obj_mob_spawner.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"Player","path":"objects/Player/Player.yy",},},
+    {"id":{"name":"obj_thrown_knife","path":"objects/obj_thrown_knife/obj_thrown_knife.yy",},},
     {"id":{"name":"test","path":"objects/test/test.yy",},},
     {"id":{"name":"JasonsBedroom","path":"rooms/JasonsBedroom/JasonsBedroom.yy",},},
     {"id":{"name":"leosRoom","path":"rooms/leosRoom/leosRoom.yy",},},
@@ -59,6 +61,10 @@
     {"id":{"name":"Player_right_spr","path":"sprites/Player_right_spr/Player_right_spr.yy",},},
     {"id":{"name":"Player_up_spr","path":"sprites/Player_up_spr/Player_up_spr.yy",},},
     {"id":{"name":"TreeSprites","path":"sprites/TreeSprites/TreeSprites.yy",},},
+    {"id":{"name":"spr_bbq","path":"sprites/spr_bbq/spr_bbq.yy",},},
+    {"id":{"name":"spr_knife","path":"sprites/spr_knife/spr_knife.yy",},},
+    {"id":{"name":"spr_main_object","path":"sprites/spr_main_object/spr_main_object.yy",},},
+    {"id":{"name":"spr_zombie","path":"sprites/spr_zombie/spr_zombie.yy",},},
     {"id":{"name":"HouseSpriteSheet","path":"tilesets/HouseSpriteSheet/HouseSpriteSheet.yy",},},
     {"id":{"name":"MapSpritesTileSheet","path":"tilesets/MapSpritesTileSheet/MapSpritesTileSheet.yy",},},
     {"id":{"name":"ObjectMapTileSet","path":"tilesets/ObjectMapTileSet/ObjectMapTileSet.yy",},},
@@ -67,10 +73,12 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"room_ryan","path":"rooms/room_ryan/room_ryan.yy",},},
     {"roomId":{"name":"leosRoom","path":"rooms/leosRoom/leosRoom.yy",},},
     {"roomId":{"name":"room_alan","path":"rooms/room_alan/room_alan.yy",},},
-    {"roomId":{"name":"room_ryan","path":"rooms/room_ryan/room_ryan.yy",},},
     {"roomId":{"name":"JasonsBedroom","path":"rooms/JasonsBedroom/JasonsBedroom.yy",},},
+
+
   ],
   "templateType":null,
   "TextureGroups":[

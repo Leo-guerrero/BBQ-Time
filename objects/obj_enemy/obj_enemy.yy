@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Player_down_spr",
-    "path":"sprites/Player_down_spr/Player_down_spr.yy",
+    "name":"spr_zombie",
+    "path":"sprites/spr_zombie/spr_zombie.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,12 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_bbq",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_main_object",
+  "eventList":[],
   "managed":true,
-  "name":"obj_bbq",
+  "name":"obj_main_object",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -31,12 +28,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_bbq",
-    "path":"sprites/spr_bbq/spr_bbq.yy",
+    "name":"spr_main_object",
+    "path":"sprites/spr_main_object/spr_main_object.yy",
   },
-  "spriteMaskId":{
-    "name":"Player_down_spr",
-    "path":"sprites/Player_down_spr/Player_down_spr.yy",
-  },
+  "spriteMaskId":null,
   "visible":true,
 }
