@@ -92,7 +92,7 @@ switch(State){
 	case PlayerState.SHOOTING:
 	
 		if(global.KnifeCount > 0){
-			var inst_knife = instance_create_depth(x,y,-999,obj_thrown_knife);
+			var inst_knife = instance_create_depth(x,y,1,obj_thrown_knife);
 			inst_knife.direction = point_direction(x,y,mouse_x, mouse_y);
 			inst_knife.image_angle = inst_knife.direction;
 			global.KnifeCount--;
@@ -136,3 +136,22 @@ if(place_meeting(x,y + yspeed, obj_main_object)){
 // 3. Movement application
 x += xspeed;
 y += yspeed;
+
+
+// dilation afterimage
+
+if (global.DilationFactor != 1) {
+
+	instance_create_depth(x,y,1, obj_afterimage);
+	
+	var red_tint = layer_get_fx("Dilation");
+	
+	if (red_tint == -1) {
+		
+		var _fx_tint = fx_create("_filter_colourise");
+		fx_set_parameter(_fx_tint, "g_TintCol", [1, 0, 0, 0.01]);
+		fx_set_parameter(_fx_tint, "g_Intensity", min(abs(1-global.DilationFactor), 1));
+		layer_set_fx("Dilation", _fx_tint);
+		
+	} 
+}

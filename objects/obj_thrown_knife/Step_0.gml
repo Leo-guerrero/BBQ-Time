@@ -1,4 +1,4 @@
-speed = BASE_SPEED * room_speed/60
+speed = BASE_SPEED * room_speed/60  * global.DilationFactor
 
 if(life_time > 0){
 	life_time--;

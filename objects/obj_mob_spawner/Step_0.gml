@@ -1,7 +1,7 @@
 //show_debug_message("Mobs: " + string(instance_number(Enemy)));
 
 // Time accumulation (delta_time is in microseconds)
-t_accum += delta_time / 1000000;
+t_accum += delta_time / 1000000 * global.DilationFactor;
 
 // Only try to spawn if under cap and the timer elapsed
 if (instance_number(obj_enemy) < max_enemies && t_accum >= spawn_interval_sec) {

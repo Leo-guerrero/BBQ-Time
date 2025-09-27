@@ -38,6 +38,7 @@
     {"id":{"name":"font_menu","path":"fonts/font_menu/font_menu.yy",},},
     {"id":{"name":"camera","path":"objects/camera/camera.yy",},},
     {"id":{"name":"global_vars_obj","path":"objects/global_vars_obj/global_vars_obj.yy",},},
+    {"id":{"name":"obj_afterimage","path":"objects/obj_afterimage/obj_afterimage.yy",},},
     {"id":{"name":"obj_bbq","path":"objects/obj_bbq/obj_bbq.yy",},},
     {"id":{"name":"obj_btn_help_to_menu","path":"objects/obj_btn_help_to_menu/obj_btn_help_to_menu.yy",},},
     {"id":{"name":"obj_btn_help","path":"objects/obj_btn_help/obj_btn_help.yy",},},
