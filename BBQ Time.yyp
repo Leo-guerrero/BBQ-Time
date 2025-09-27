@@ -50,6 +50,7 @@
     {"id":{"name":"obj_help_spawner","path":"objects/obj_help_spawner/obj_help_spawner.yy",},},
     {"id":{"name":"obj_main_object","path":"objects/obj_main_object/obj_main_object.yy",},},
     {"id":{"name":"obj_mob_spawner","path":"objects/obj_mob_spawner/obj_mob_spawner.yy",},},
+    {"id":{"name":"obj_pause","path":"objects/obj_pause/obj_pause.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_thrown_knife","path":"objects/obj_thrown_knife/obj_thrown_knife.yy",},},
     {"id":{"name":"Player","path":"objects/Player/Player.yy",},},

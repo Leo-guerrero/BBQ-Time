@@ -1,4 +1,6 @@
-
+if(global.game_paused){
+	exit;
+}
 
 var dt =  room_speed/60 * global.DilationFactor
 

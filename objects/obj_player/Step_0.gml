@@ -1,4 +1,8 @@
 // --- STEP EVENT ---
+if(global.game_paused){
+	exit;
+}
+
 depth = -y
 
 // 1. Input check (once per frame)

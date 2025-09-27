@@ -8,6 +8,7 @@ global.BBQHP = 50;
 global.HealthBarSubImage = 0;
 
 global.DilationFactor = 1;
+global.game_paused = false;
 
 gpu_set_texfilter(false);
 fullscreen = true;

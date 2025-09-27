@@ -1,5 +1,5 @@
 
-if(global.Time > 0 and room==room_ryan){
+if(global.Time > 0 && room==room_ryan && !global.game_paused){
 	global.Time--;
 }
 
