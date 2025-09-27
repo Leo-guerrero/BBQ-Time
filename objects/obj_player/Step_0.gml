@@ -136,3 +136,11 @@ if(place_meeting(x,y + yspeed, obj_main_object)){
 // 3. Movement application
 x += xspeed;
 y += yspeed;
+
+
+// dilation afterimage
+if (global.IsDilation) {
+
+	instance_create_depth(x,y,-0, obj_afterimage);
+
+}

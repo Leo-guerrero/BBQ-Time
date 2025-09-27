@@ -1,5 +1,5 @@
 
-var dt =  room_speed/60
+var dt =  room_speed/60 * global.DilationFactor
 
 var target = [obj_bbq.x, obj_bbq.y];
 //var target = [po_bbq.x, po_bbq.y];

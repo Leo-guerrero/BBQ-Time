@@ -37,6 +37,7 @@
   "resources":[
     {"id":{"name":"camera","path":"objects/camera/camera.yy",},},
     {"id":{"name":"global_vars_obj","path":"objects/global_vars_obj/global_vars_obj.yy",},},
+    {"id":{"name":"obj_afterimage","path":"objects/obj_afterimage/obj_afterimage.yy",},},
     {"id":{"name":"obj_bbq","path":"objects/obj_bbq/obj_bbq.yy",},},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
     {"id":{"name":"obj_main_object","path":"objects/obj_main_object/obj_main_object.yy",},},
@@ -74,9 +75,9 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"room_ryan","path":"rooms/room_ryan/room_ryan.yy",},},
+    {"roomId":{"name":"room_alan","path":"rooms/room_alan/room_alan.yy",},},
     {"roomId":{"name":"leosRoom","path":"rooms/leosRoom/leosRoom.yy",},},
     {"roomId":{"name":"JasonsBedroom","path":"rooms/JasonsBedroom/JasonsBedroom.yy",},},
-    {"roomId":{"name":"room_alan","path":"rooms/room_alan/room_alan.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[

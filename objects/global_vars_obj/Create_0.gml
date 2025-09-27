@@ -5,6 +5,9 @@ global.TimeDisplay = global.Time / 60;
 global.PlayerFace = "DOWN";
 global.KnifeCount = 10;
 
+global.DilationFactor = 1;
+global.IsDilation = false;
+
 gpu_set_texfilter(false);
 fullscreen = true;
 window_set_fullscreen(fullscreen);
