@@ -2,7 +2,8 @@ enum PlayerState {
 	IDLE,
 	MOVING,
 	SHOOTING,
-	ATTACKING
+	ATTACKING,
+	RUNNING
 } 
 
 xspeed = 0;

@@ -41,8 +41,7 @@ switch(State){
 			sprite_index = Player_up_spr;
 		} 
 		
-		x += xspeed;
-		y += yspeed;
+		
 		
 		break;
 		
@@ -53,6 +52,20 @@ switch(State){
 		
 		
 		break;
+		
+	case PlayerState.RUNNING:
+		up = keyboard_check(ord("W"));
+		down = keyboard_check(ord("S"));
+		left = keyboard_check(ord("A"));
+		right = keyboard_check(ord("D"));
+		
+		xspeed = (right - left) * move_speed;
+		yspeed = (down - up) * move_speed;
+	
+		break;
 	
 
 }
+
+x += xspeed;
+y += yspeed;
