@@ -6,6 +6,8 @@ enum PlayerState {
 	RUNNING
 } 
 
+depth = 0
+
 xspeed = 0;
 yspeed = 0;
 

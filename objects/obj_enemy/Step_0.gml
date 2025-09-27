@@ -6,7 +6,7 @@ var target = [obj_bbq.x, obj_bbq.y];
 direction = point_direction(x, y, target[0], target[1])
 
 // TODO vary with time dilation
-image_speed = 0.5
+image_speed = 0.5*global.DilationFactor
 
 speed = 0
 
