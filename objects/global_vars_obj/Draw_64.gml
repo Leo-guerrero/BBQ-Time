@@ -11,17 +11,18 @@ if (room == room_ryan)
 //draw_text(x,y + 10, global.Time);
 
 
+if (room == room_ryan) {
+	draw_sprite_stretched(spr_BBQ_health_bar,global.HealthBarSubImage,(display_get_gui_width() / 2) - 220, (display_get_gui_height() / 2) - 290, 10 * global.BBQHP,20);
 
-draw_sprite_stretched(spr_BBQ_health_bar,global.HealthBarSubImage,(display_get_gui_width() / 2) - 220, (display_get_gui_height() / 2) - 290, 10 * global.BBQHP,20);
-
-if(global.BBQHP > 40){
-	global.HealthBarSubImage = 0;
-} else if (global.BBQHP > 30 && global.BBQHP < 40){
-	global.HealthBarSubImage = 1;
-} else if (global.BBQHP > 20 && global.BBQHP < 30){
-	global.HealthBarSubImage = 2;
-} else if(global.BBQHP > 10 && global.BBQHP < 20){
-	global.HealthBarSubImage = 3;
-} else if(global.BBQHP < 10){
-	global.HealthBarSubImage = 4;
+	if(global.BBQHP > 40){
+		global.HealthBarSubImage = 0;
+	} else if (global.BBQHP > 30 && global.BBQHP < 40){
+		global.HealthBarSubImage = 1;
+	} else if (global.BBQHP > 20 && global.BBQHP < 30){
+		global.HealthBarSubImage = 2;
+	} else if(global.BBQHP > 10 && global.BBQHP < 20){
+		global.HealthBarSubImage = 3;
+	} else if(global.BBQHP < 10){
+		global.HealthBarSubImage = 4;
+	}
 }

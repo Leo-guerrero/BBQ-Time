@@ -1,8 +1,0 @@
-{
-  "FolderOrderSettings":[],
-  "ResourceOrderSettings":[
-    {"name":"obj_afterimage","order":1,"path":"objects/obj_afterimage/obj_afterimage.yy",},
-    {"name":"spr_zombie_attack","order":1,"path":"sprites/spr_zombie_attack/spr_zombie_attack.yy",},
-    {"name":"spr_zombie_still","order":2,"path":"sprites/spr_zombie_still/spr_zombie_still.yy",},
-  ],
-}
