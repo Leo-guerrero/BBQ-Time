@@ -1,7 +1,7 @@
 {
   "$GMSprite":"",
   "%Name":"Player_left_spr",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":15,
   "bbox_left":3,
   "bbox_right":12,

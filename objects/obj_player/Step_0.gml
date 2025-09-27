@@ -88,7 +88,50 @@ switch(State){
             State = PlayerState.IDLE;
         }
         break;
+		
+	case PlayerState.SHOOTING:
+	
+		if(global.KnifeCount > 0){
+			var inst_knife = instance_create_depth(x,y,-999,obj_thrown_knife);
+			inst_knife.direction = point_direction(x,y,mouse_x, mouse_y);
+			inst_knife.image_angle = inst_knife.direction;
+			global.KnifeCount--;
+			State = PlayerState.IDLE;
+		}
+		State = PlayerState.IDLE;
+		
+		break;
 }
+
+if(mouse_check_button_pressed(mb_right)){
+	State = PlayerState.SHOOTING;
+}
+
+if place_meeting(x + xspeed, y, obj_main_object){
+	xspeed = 0;
+}
+if(place_meeting(x,y + yspeed, obj_main_object)){
+	yspeed = 0;
+}
+
+
+// Sprite direction
+        if(xspeed > 0){
+            
+            global.PlayerFace = "RIGHT";
+        } 
+        else if(xspeed < 0){
+            
+            global.PlayerFace = "LEFT";
+        } 
+        else if(yspeed > 0){
+            
+            global.PlayerFace = "DOWN";
+        } 
+        else if(yspeed < 0){
+            
+            global.PlayerFace = "UP";
+        }
 
 // 3. Movement application
 x += xspeed;
