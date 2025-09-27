@@ -23,52 +23,50 @@ if(place_meeting(x,y + yspeed, obj_main_object)){
 	yspeed = 0;
 }
 
-if(xspeed > 0){
-	image_xscale = -1
-}else if (xspeed < 0){
-	image_xscale = 1;
-}
+image_xscale = (target[0]-x > 0) ? 1 : -1;
 
-x+= xspeed;
-y +=yspeed;
 
 // TODO vary with time dilation
 image_speed = 0.5*global.DilationFactor
 
-speed = 0
-
 switch (cur_state)
 {
 	case ENEMY_STATE.Walking:
-		var target = [obj_bbq.x, obj_bbq.y];
 		direction = point_direction(x, y, target[0], target[1])
-		//speed = BASE_SPEED * dt
-		
-		//set animation
-		image_xscale = (target[0]-x > 0) ? 1 : -1;
-	
-		var to_attack = instance_place(x, y, [obj_bbq, obj_player])
+		x+= xspeed;
+		y+=yspeed;
 
-		if (to_attack != noone) {
-			global.BBQHP -= BASE_DMG;
-			cur_state = ENEMY_STATE.Recharging
-			cur_cooldown = ATK_COOLDOWN;
-			// add attack animation too
-			show_debug_message("Attacked")
+		//set animation
+	
+		attack_target = instance_place(x, y, [obj_bbq, obj_player])
+
+		if (attack_target != noone) {
+			cur_state = ENEMY_STATE.Charging
 		}
 	break;
 	
-	case ENEMY_STATE.Recharging:
-	// TODO add animation frames state later
+	case ENEMY_STATE.Charging:
+		sprite_index = spr_zombie_still
+		cur_chargetime += dt/60;
 	
-		cur_cooldown -= dt/60;
-	
-		if (cur_cooldown <= 0) {
-			cur_cooldown = 0;
-			cur_state = ENEMY_STATE.Walking;
+		if (cur_chargetime >= ATK_CHARGETIME) {
+			cur_chargetime = 0;
+			cur_state = ENEMY_STATE.Attacking;
 		}
 	break;
 	
+	case ENEMY_STATE.Attacking:
+		sprite_index = spr_zombie_attack
+	
+		if(floor(image_index) >= sprite_get_number(sprite_index)-1) {
+			
+			if instance_place(x, y, attack_target) {
+				attack_target.hp -= BASE_DMG
+			}
+			
+			sprite_index = spr_zombie_R
+			cur_state = ENEMY_STATE.Walking
+		}
 }
 
 if(place_meeting(x,y,obj_thrown_knife)){

@@ -1,15 +1,19 @@
 enum ENEMY_STATE {
 	Walking,
-	Recharging
+	Charging,
+	Attacking
 }
 
 BASE_SPEED = 0.5;
-ATK_COOLDOWN = 4;
+ATK_CHARGETIME = 0.5;
 BASE_DMG = 5;
+ATK_RADIUS = 10
 
 hp = 50;
 cur_state = ENEMY_STATE.Walking;
-cur_cooldown = 0;
+cur_chargetime = 0;
 maxHp = 50;
+
+attack_target = noone
 
 for_back_heath_bar = hp / maxHp;
