@@ -1,4 +1,5 @@
 // --- STEP EVENT ---
+depth = -y
 
 // 1. Input check (once per frame)
 up    = keyboard_check(ord("W"));
