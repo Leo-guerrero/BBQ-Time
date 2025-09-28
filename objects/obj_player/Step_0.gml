@@ -162,22 +162,15 @@ y += yspeed;
 
 
 // dilation afterimage
-
 if (global.DilationFactor != 1) {
-
 	instance_create_depth(x,y,1, obj_afterimage);
-	
-	var red_tint = layer_get_fx("Dilation");
-	
-	if (red_tint == -1) {
-		
-		var _fx_tint = fx_create("_filter_colourise");
-		fx_set_parameter(_fx_tint, "g_TintCol", [1, 0, 0, 0.01]);
-		fx_set_parameter(_fx_tint, "g_Intensity", min(abs(1-global.DilationFactor), 1));
-		layer_set_fx("Dilation", _fx_tint);
-		
-	} 
 }
+
+	
+var _fx_tint = fx_create("_filter_colourise");
+fx_set_parameter(_fx_tint, "g_TintCol", [0, 0, 1, 0.01]);
+fx_set_parameter(_fx_tint, "g_Intensity", min(abs(1-global.DilationFactor), 1));
+layer_set_fx("Dilation", _fx_tint);
 
 //if (global.KnifeCount == 0) {
 //	global.IsRecallKnives = true;	

@@ -15,6 +15,9 @@ move_speed = 1.2;
 
 State = PlayerState.MOVING;
 
+TIME_STOP_DURATION = 10; // s
+time_stop_uses = 0;
+
 up = 0;
 down = 0;
 left = 0;

@@ -1,7 +1,6 @@
 if(global.GameState == GameStates.GAMEOVER){
 	exit;
 }
-
 var dt =  room_speed/60 * global.DilationFactor
 
 depth = -y - 1
@@ -34,7 +33,7 @@ switch (cur_state)
 	case ENEMY_STATE.Walking:
 		direction = point_direction(x, y, target[0], target[1])
 		x+= xspeed;
-		y+=yspeed;
+		y+= yspeed;
 
 		//set animation
 	

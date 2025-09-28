@@ -7,10 +7,10 @@ if(player != noone){
 	//player close to shop
 	if(distance_to_point(player.x, player.y) < 20)
 	{
-		
 		if(keyboard_check_pressed(ord("E")) and !inShopMenu)
 		{
 			inShopMenu = true;
+			dilation_changed = true;
 			global.DilationFactor = 0.5;
 		}
 		
@@ -47,7 +47,10 @@ if(player != noone){
 	}else
 	{
 		//set time dilation back to 1
-		global.DilationFactor = 1;
+		if (dilation_changed) {
+			dilation_changed = false;
+			global.DilationFactor = 1;
+		}
 		inShopMenu = false; 
 	}
 }
