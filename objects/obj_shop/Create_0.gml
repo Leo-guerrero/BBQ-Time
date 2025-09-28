@@ -26,3 +26,5 @@ var gh = display_get_gui_height();
 // Calculate the top-left corner (gui_x, gui_y) needed to center the rect_w/h box
 gui_x = (gw / 2) - (rect_w / 2);
 gui_y = (gh / 2) - (rect_h / 2);
+
+dilation_changed = false

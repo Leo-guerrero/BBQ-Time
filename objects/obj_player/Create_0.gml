@@ -21,6 +21,16 @@ left = 0;
 right = 0;
 attack = mouse_check_button_pressed(mb_left);
 run = keyboard_check(vk_shift);
+timestop = keyboard_check(vk_space)
+recallknives = keyboard_check(ord("f"))
+
+timestop_elapsed = 0;
+is_timestop = false;
+timestop_cooldown_remaining = 0;
+
+recallanimation = 0;
+is_knife_recall = false;
+recall_cooldown_remaining = 0;
 
 hp = 100
 for_back_heath_bar = global.CurrentPlayerHP / global.MaxPlayerHp;

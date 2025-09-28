@@ -36,8 +36,6 @@ if (global.GameState == GameStates.GAMEOVER) {
 		global.Rank = "F"
 	}
 	
-	
-	
     // translucent dim
     draw_set_alpha(0.6); draw_set_color(c_black);
     draw_rectangle(0, 0, gw, gh, false);
@@ -74,8 +72,8 @@ if (global.GameState == GameStates.GAMEOVER) {
         audio_stop_all();
         instance_activate_all();   // re-activate world (you paused with deactivate_all)
         room_restart();
-		global.GameState = GameStates.PLAY;
-		global.BBQHP = 50;
+		global.GameState = GameStates.RESTART;
+
     }
 
     // Menu button rect
