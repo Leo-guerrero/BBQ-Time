@@ -18,7 +18,14 @@ global.HealthBarSubImage = 0;
 
 global.DilationFactor = 1;
 
-enum GameStates { MENU, PLAY, PAUSE, RESTART, GAMEOVER }
+enum GameStates {
+	MENU, 
+	PLAY, 
+	PAUSE, 
+	RESTART, 
+	GAMEOVER 
+}
+
 global.GameState = GameStates.MENU;
 global.end_reason = "TIME'S UP";
 global.Rank       = "S+";

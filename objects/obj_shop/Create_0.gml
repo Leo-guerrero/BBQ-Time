@@ -6,6 +6,7 @@ enum FOODS{
 	Thyme,           // 2: Decrease Time Cooldown Duration
 }
 
+depth = -y+16
 inShopMenu = false;
 
 // --- GUI SETUP ---

@@ -26,4 +26,6 @@ if (inShopMenu)
     // 3. Reset settings
     draw_set_halign(fa_left);
     draw_set_valign(fa_top);
+	draw_set_font(font_menu);
+
 }

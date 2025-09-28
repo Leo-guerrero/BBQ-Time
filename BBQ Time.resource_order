@@ -4,5 +4,6 @@
     {"name":"spr_icon_Dilate","order":2,"path":"sprites/spr_icon_Dilate/spr_icon_Dilate.yy",},
     {"name":"spr_icon_empty","order":3,"path":"sprites/spr_icon_empty/spr_icon_empty.yy",},
     {"name":"spr_icon_Recall","order":1,"path":"sprites/spr_icon_Recall/spr_icon_Recall.yy",},
+    {"name":"spr_money","order":4,"path":"sprites/spr_money/spr_money.yy",},
   ],
 }

@@ -8,7 +8,7 @@ if(global.GameState == GameStates.RESTART)
 	global.GameState = GameStates.PLAY;
 }
 
-if(global.Time > 0 && room==JasonsBedroom && global.GameState == GameStates.PLAY){
+if(global.Time > 0 && room==JasonsBedroom && global.GameState == GameStates.PLAY && !obj_shop.inShopMenu){
 	global.Time--;
 }
 

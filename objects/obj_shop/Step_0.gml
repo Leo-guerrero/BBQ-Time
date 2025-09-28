@@ -11,7 +11,7 @@ if(player != noone){
 		{
 			inShopMenu = true;
 			dilation_changed = true;
-			global.DilationFactor = 0.5;
+			global.DilationFactor = 0;
 		}
 		
 		if(inShopMenu)
@@ -44,6 +44,12 @@ if(player != noone){
 				global.TimeStopCoolDownDuration = max(5, global.TimeStopCoolDownDuration-1)  
 				global.TimeStopDuration += 1
 			}
+			
+			// apply blue tint
+			var _fx_tint = fx_create("_filter_colourise");
+			fx_set_parameter(_fx_tint, "g_TintCol", [0, 0, 1, 0.01]);
+			fx_set_parameter(_fx_tint, "g_Intensity", 1);
+			layer_set_fx("Dilation", _fx_tint);
 		}
 	}else
 	{
@@ -51,6 +57,11 @@ if(player != noone){
 		if (dilation_changed) {
 			dilation_changed = false;
 			global.DilationFactor = 1;
+			
+			var _fx_tint = fx_create("_filter_colourise");
+			fx_set_parameter(_fx_tint, "g_TintCol", [0, 0, 1, 0.01]);
+			fx_set_parameter(_fx_tint, "g_Intensity", 0);
+			layer_set_fx("Dilation", _fx_tint);
 		}
 		inShopMenu = false; 
 	}

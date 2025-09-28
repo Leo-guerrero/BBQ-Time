@@ -3,7 +3,11 @@ if(global.GameState == GameStates.GAMEOVER){
 	exit;
 }
 
-depth = -y
+if (!is_timestop) {
+	depth = -y
+} else {
+	depth = -600	
+}
 
 // 1. Input check (once per frame)
 up    = keyboard_check(ord("W"));
@@ -159,11 +163,18 @@ if(place_meeting(x,y + yspeed, obj_main_object)){
         }
 
 // 3. Movement application
-x += xspeed;
-y += yspeed;
+if (!is_knife_recall) {	
+	x += xspeed;
+	y += yspeed;
+}
+
 
 
 // handle knife recall
+if (obj_shop.inShopMenu) {
+	exit	
+}
+
 if (recall_cooldown_remaining == 0) {
 	
 	if (recallknives && !is_knife_recall && global.KnifeCount < global.MaxKnives) {
