@@ -1,5 +1,5 @@
 // --- STEP EVENT ---
-if(global.game_paused){
+if(global.game_paused or global.GameState == GameStates.GAMEOVER){
 	exit;
 }
 
