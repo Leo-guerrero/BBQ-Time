@@ -12,8 +12,8 @@ if (room == JasonsBedroom)
 
 
 if (global.GameState == GameStates.PLAY){
-	draw_sprite_stretched(spr_BBQ_health_bar_back,0,(display_get_gui_width() / 2) - 220, (display_get_gui_height() / 2) - 290, global.StaticBBQHP,20);
-	draw_sprite_stretched(spr_BBQ_health_bar,global.HealthBarSubImage,(display_get_gui_width() / 2) - 220, (display_get_gui_height() / 2) - 290, 10 * global.BBQHP,20);
+	draw_sprite_stretched(spr_BBQ_health_bar_back,0,(display_get_gui_width() / 2) - 220, 30, global.StaticBBQHP,20);
+	draw_sprite_stretched(spr_BBQ_health_bar,global.HealthBarSubImage,(display_get_gui_width() / 2) - 220, 30, 10 * global.BBQHP,20);
 }
 
 if(global.BBQHP > 40){
