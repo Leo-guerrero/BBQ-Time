@@ -23,3 +23,4 @@ attack = mouse_check_button_pressed(mb_left);
 run = keyboard_check(vk_shift);
 
 hp = 100
+for_back_heath_bar = global.CurrentPlayerHP / global.MaxPlayerHp;

@@ -1,4 +1,6 @@
 {
   "FolderOrderSettings":[],
-  "ResourceOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"Player_left_spr","order":1,"path":"sprites/Player_left_spr/Player_left_spr.yy",},
+  ],
 }

@@ -22,3 +22,7 @@ global.Rank       = "S+";
 gpu_set_texfilter(false);
 fullscreen = true;
 window_set_fullscreen(fullscreen);
+
+global.CurrentPlayerHP = 100;
+global.MaxPlayerHp = 100;
+global.PlayerRespawnDelay = 0;

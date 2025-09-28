@@ -27,3 +27,10 @@ if(global.BBQHP > 40){
 } else if(global.BBQHP < 10){
 	global.HealthBarSubImage = 4;
 }
+
+if(!instance_exists(obj_player) && room == JasonsBedroom){
+	
+	var Respawnseconds = floor(global.PlayerRespawnDelay / room_speed);
+
+	draw_text_transformed(display_get_gui_width() / 2, display_get_height() / 2, string(Respawnseconds), 2,2,0);
+}

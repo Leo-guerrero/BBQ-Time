@@ -178,3 +178,8 @@ if (global.DilationFactor != 1) {
 		
 	} 
 }
+
+if(global.CurrentPlayerHP <= 0){
+	global.PlayerRespawnDelay = room_speed * 5;
+	instance_destroy();
+}
