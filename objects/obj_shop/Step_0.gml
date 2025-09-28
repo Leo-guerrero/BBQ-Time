@@ -5,7 +5,7 @@ var player = instance_find(obj_player, 0);
 if(player != noone){ 
 	
 	//player close to shop
-	if(distance_to_point(player.x, player.y) < 20)
+	if(distance_to_point(player.x, player.y) < 20 && !obj_player.is_timestop)
 	{
 		if(keyboard_check_pressed(ord("E")) and !inShopMenu)
 		{

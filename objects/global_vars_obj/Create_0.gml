@@ -6,9 +6,12 @@ global.TimeDisplay = global.Time / 60 ;
 global.TimeStopDuration = 5;//how long you can use the ability
 global.TimeStopCoolDownDuration = 10; //time between using the ability again
 
-global.PlayerFace = "DOWN";
-global.KnifeCount = 10;
+global.RecallKnivesCooldown = 5;
 global.IsRecallKnives = false;
+global.MaxKnives = 10;
+global.KnifeCount = global.MaxKnives;
+
+global.PlayerFace = "DOWN";
 global.BBQHP = 50;
 global.StaticBBQHP = 10 * 50;
 global.HealthBarSubImage = 0;

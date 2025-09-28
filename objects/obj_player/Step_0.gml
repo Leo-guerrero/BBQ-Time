@@ -13,6 +13,7 @@ right = keyboard_check(ord("D"));
 attack = mouse_check_button_pressed(mb_left);
 run = keyboard_check(vk_shift);
 timestop = keyboard_check(vk_space)
+recallknives = keyboard_check(ord("F"))
 
 // 2. State machine
 switch(State){
@@ -162,17 +163,32 @@ x += xspeed;
 y += yspeed;
 
 
-// dilation afterimage
-if (global.DilationFactor != 1) {
-	instance_create_depth(x,y,1, obj_afterimage);
-}
-
+// handle knife recall
+if (recall_cooldown_remaining == 0) {
 	
-var _fx_tint = fx_create("_filter_colourise");
-fx_set_parameter(_fx_tint, "g_TintCol", [0, 0, 1, 0.01]);
-fx_set_parameter(_fx_tint, "g_Intensity", min(abs(1-global.DilationFactor), 1));
-layer_set_fx("Dilation", _fx_tint);
-
+	if (recallknives && !is_knife_recall && global.KnifeCount < global.MaxKnives) {
+		is_knife_recall = true
+	} else if (is_knife_recall) {
+		recallanimation += room_speed / 3600;
+		global.IsRecallKnives = true;
+		
+		var _fx_tint = fx_create("_filter_colourise");
+		fx_set_parameter(_fx_tint, "g_TintCol", [0, 0, 1, 0.01]);
+		fx_set_parameter(_fx_tint, "g_Intensity", (is_knife_recall) ? max(0, 1-(recallanimation/0.5)) : 0);
+		
+		if (global.KnifeCount == global.MaxKnives) {
+			global.IsRecallKnives = false;
+			is_knife_recall = false;
+			recall_cooldown_remaining = global.RecallKnivesCooldown
+			fx_set_parameter(_fx_tint, "g_Intensity", 0);
+			recallanimation = 0;
+		}
+		layer_set_fx("Dilation", _fx_tint);
+	}
+} else {
+	recall_cooldown_remaining = max(0, recall_cooldown_remaining - room_speed/3600)
+	global.IsRecallKnives = false;
+}
 
 // handle time dilation
 if (timestop_cooldown_remaining == 0) {
@@ -182,25 +198,29 @@ if (timestop_cooldown_remaining == 0) {
 		global.DilationFactor = 0.5
 	} else if (is_timestop) {
 		timestop_elapsed += room_speed / 3600;
+		
+		// dilation afterimage
+		if (is_timestop) {
+			instance_create_depth(x,y,1, obj_afterimage);
+		}
+	
+		var _fx_tint = fx_create("_filter_colourise");
+		fx_set_parameter(_fx_tint, "g_TintCol", [0, 0, 1, 0.01]);
+		fx_set_parameter(_fx_tint, "g_Intensity", (is_timestop) ? 1-(timestop_elapsed/global.TimeStopDuration) : 0);
+		layer_set_fx("Dilation", _fx_tint);
+		
 		if (timestop_elapsed >= global.TimeStopDuration) {
-				is_timestop = false;
-				global.DilationFactor = 1
-				timestop_elapsed = 0
-				is_knife_recall = true;
-				timestop_cooldown_remaining = global.TimeStopCoolDownDuration;
+			is_timestop = false;
+			global.DilationFactor = 1
+			timestop_elapsed = 0
+			timestop_cooldown_remaining = global.TimeStopCoolDownDuration;
 		}
 	}
 } else {
 	timestop_cooldown_remaining = max(0, timestop_cooldown_remaining - room_speed/3600)
 }
 
-if (is_knife_recall) {
-	global.IsRecallKnives = true;
-	if (global.KnifeCount == 10) {
-		global.IsRecallKnives = false;
-		is_knife_recall = false;
-	}
-}
+
 
 
 
