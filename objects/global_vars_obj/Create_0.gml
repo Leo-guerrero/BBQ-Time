@@ -1,4 +1,5 @@
 global.Time = room_speed * 60 * 1;
+//global.Time = room_speed * 2 * 1;
 
 global.TimeDisplay = global.Time / 60 ;
 
@@ -13,7 +14,7 @@ global.DilationFactor = 1;
 enum GameStates { MENU, PLAY, PAUSE, GAMEOVER }
 global.GameState = GameStates.MENU;
 global.end_reason = "TIME'S UP";
-global.rank       = "S+";
+global.Rank       = "S+";
 
 gpu_set_texfilter(false);
 fullscreen = true;

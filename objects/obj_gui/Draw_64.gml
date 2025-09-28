@@ -10,6 +10,34 @@ if (state == GameState.PAUSE) {
 // End-game overlay
 // End-game overlay
 if (global.GameState == GameStates.GAMEOVER) {
+	// update rank
+	if (global.BBQHP == 50)
+	{
+		global.Rank = "S"
+	}
+	else if (global.BBQHP >= 40)
+	{
+		global.Rank = "A"
+	}
+	else if (global.BBQHP >= 30)
+	{
+		global.Rank = "B"
+	}
+	else if (global.BBQHP >= 20)
+	{
+		global.Rank = "C"
+	}
+		else if (global.BBQHP >= 10)
+	{
+		global.Rank = "D"
+	}
+	else
+	{
+		global.Rank = "F"
+	}
+	
+	
+	
     // translucent dim
     draw_set_alpha(0.6); draw_set_color(c_black);
     draw_rectangle(0, 0, gw, gh, false);
@@ -21,7 +49,7 @@ if (global.GameState == GameStates.GAMEOVER) {
     draw_text(gw*0.5, gh*0.25, end_reason);
 
     draw_set_color(c_white);
-    draw_text(gw*0.5, gh*0.35, "Rank: " + rank);
+    draw_text(gw*0.5, gh*0.35, "Rank: " + global.Rank);
 
     // --- buttons ---
     var bx = gw*0.5;          // center X
