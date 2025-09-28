@@ -28,3 +28,32 @@ if(global.BBQHP > 40){
 	global.HealthBarSubImage = 4;
 }
 
+
+// draw ability gui
+if (global.GameState == GameStates.PLAY){
+	
+
+	draw_sprite_stretched(spr_icon_Dilate, 0, display_get_gui_width()/2 - 150, display_get_gui_height()-80, 75, 75)
+	
+	draw_sprite_stretched(spr_icon_Recall, 0, display_get_gui_width()/2 - 50, display_get_gui_height()-80, 75, 75)
+
+	draw_set_alpha(0.5);
+	draw_set_colour(c_black);
+	if (obj_player.is_timestop) {
+		draw_rectangle(display_get_gui_width()/2-150, display_get_gui_height()-80, display_get_gui_width()/2-75, display_get_gui_height()-5, false)
+	} else {
+		draw_rectangle(display_get_gui_width()/2-150, display_get_gui_height()-5-75*(obj_player.timestop_cooldown_remaining/global.TimeStopCoolDownDuration), display_get_gui_width()/2-75, display_get_gui_height()-5, false)
+	}
+	if (obj_player.is_knife_recall) {
+		draw_rectangle(display_get_gui_width()/2-50, display_get_gui_height()-80, display_get_gui_width()/2+25, display_get_gui_height()-5, false)
+	} else {
+		draw_rectangle(display_get_gui_width()/2-50, display_get_gui_height()-5-75*(obj_player.recall_cooldown_remaining/global.RecallKnivesCooldown), display_get_gui_width()/2+25, display_get_gui_height()-5, false)
+	}
+	
+	draw_set_alpha(1)
+	draw_set_colour(c_white);
+
+	draw_sprite_stretched(spr_icon_empty, 0, display_get_gui_width()/2 + 50, display_get_gui_height()-80, 75, 75)
+	draw_sprite_stretched(spr_knife, 0, display_get_gui_width()/2 + 55, display_get_gui_height()-75, 30, 30)
+	draw_text(display_get_gui_width()/2 + 74 - 20*(string_length(string(global.KnifeCount))-1), display_get_gui_height()-65, string(global.KnifeCount))
+}
