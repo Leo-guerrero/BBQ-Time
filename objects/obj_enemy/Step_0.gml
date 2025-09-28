@@ -23,7 +23,15 @@ if(place_meeting(x,y + yspeed, obj_main_object)){
 	yspeed = 0;
 }
 
-image_xscale = (target[0]-x > 0) ? 1 : -1;
+
+
+
+if(xspeed > 0 || xspeed == 0){
+	image_xscale = -1
+}else if (xspeed < 0 || xspeed == 0){
+	image_xscale = 1;
+}
+
 
 
 // TODO vary with time dilation

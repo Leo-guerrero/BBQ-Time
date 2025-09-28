@@ -2,4 +2,4 @@
 event_inherited();
 
 // take player to room
-room_goto(room_ryan);
+room_goto(JasonsBedroom);
