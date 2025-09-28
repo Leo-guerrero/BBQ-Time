@@ -6,10 +6,8 @@ if (state == GameState.PAUSE) {
     draw_set_color(c_white); draw_set_halign(fa_center); draw_set_valign(fa_middle);
     draw_text(gw*0.5, gh*0.3, "PAUSED");
 }
-
 // End-game overlay
-// End-game overlay
-if (global.GameState == GameStates.GAMEOVER) {
+else if (global.GameState == GameStates.GAMEOVER) {
 	// update rank
 	if (global.BBQHP == 50)
 	{

@@ -13,6 +13,8 @@ yspeed = 0;
 
 move_speed = 1.2;
 
+current_food = noone;
+
 State = PlayerState.MOVING;
 
 up = 0;

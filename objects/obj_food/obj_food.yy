@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_shop",
+  "%Name":"obj_food",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_shop",
+  "name":"obj_food",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Player_down_spr",
-    "path":"sprites/Player_down_spr/Player_down_spr.yy",
+    "name":"spr_Potato",
+    "path":"sprites/spr_Potato/spr_Potato.yy",
   },
   "spriteMaskId":null,
   "visible":true,

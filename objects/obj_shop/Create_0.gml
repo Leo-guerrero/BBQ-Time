@@ -1,12 +1,19 @@
 // CREATE EVENT
 
 enum FOODS{
-	SaltAndPepper,   // 0: more damage
-	Potato,		     // 1: Health
-	Thyme,           // 2: Decrease Time Cooldown Duration
+	SaltAndPepper,   // 1: more damage
+	Potato,		     // 2: More Health/Time to BBQ
+	Thyme,           // 3: Decrease Time Cooldown Duration
+}
+
+enum UPGRADES{
+	Hot_N_Ready,   // A Hot Pocket: used for distracting zombies
+	Stove_O_Roma,  // Stove: Shoots Food At Zombies
 }
 
 inShopMenu = false;
+
+SelectedFood = FOODS.SaltAndPepper;
 
 // --- GUI SETUP ---
 // Define the desired resolution for your GUI layer (e.g., 800x800)

@@ -19,29 +19,31 @@ if(player != noone){
 			var one = keyboard_check_pressed(ord("1"));
 			var two = keyboard_check_pressed(ord("2"));
 			var three = keyboard_check_pressed(ord("3"));
-		
-			// salt and pepper
-			if(one){
-				// increase player damage
-				//with(obj_player)
-				//{
-					//no implemneted yet
-				//}
-			}
-			//Potato
-			else if(two)
+			
+			if(one and player.current_food == noone and global.Currency >= 40)
 			{
-				with(obj_bbq)
-				{
-					obj_bbq.hp += 10;
-					obj_bbq.hp = min(obj_bbq.hp, 50);
-				}
+				show_debug_message("Grabbed Salt and Pepper");
+				addFoodToPlayer(player, FOODS.SaltAndPepper);
+				
+				// offsetting the food to the player hands is in the food script
+				
+				global.Currency-=20;
 			}
-	
-			// Thyme 
-			else if(three)
+			else if(two and player.current_food == noone and global.Currency >= 10)
+			{				
+				show_debug_message("Grabbed Potato");
+				addFoodToPlayer(player, FOODS.Potato);
+				
+				// offsetting the food to the player hands is in the food script
+				
+				global.Currency-=40;
+			}
+			else if(three and player.current_food == noone and global.Currency >= 50)
 			{
-				global.TimeStopCoolDownDuration += 1;
+				show_debug_message("Grabbed Thyme");
+				addFoodToPlayer(player, FOODS.Thyme);
+
+				global.Currency-=50;
 			}
 		}
 	}else

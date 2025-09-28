@@ -3,6 +3,10 @@ global.Time = room_speed * 60 * 1;
 
 global.TimeDisplay = global.Time / 60 ;
 
+global.Currency = 0;
+
+global.playerTimerScore = 0;
+
 global.TimeStopDuration = 5;//how long you can use the ability
 global.TimeStopCoolDownDuration = 10; //time between using the ability again
 

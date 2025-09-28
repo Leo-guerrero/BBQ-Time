@@ -1,4 +1,13 @@
 {
   "FolderOrderSettings":[],
-  "ResourceOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"obj_food_button","order":1,"path":"objects/obj_food_button/obj_food_button.yy",},
+    {"name":"obj_food","order":2,"path":"objects/obj_food/obj_food.yy",},
+    {"name":"addFoodToPlayer","order":1,"path":"scripts/addFoodToPlayer/addFoodToPlayer.yy",},
+    {"name":"spr_foods","order":1,"path":"sprites/spr_foods/spr_foods.yy",},
+    {"name":"spr_Potato","order":3,"path":"sprites/spr_Potato/spr_Potato.yy",},
+    {"name":"spr_SaltAndPepper","order":4,"path":"sprites/spr_SaltAndPepper/spr_SaltAndPepper.yy",},
+    {"name":"spr_Thyme","order":5,"path":"sprites/spr_Thyme/spr_Thyme.yy",},
+    {"name":"TS_Foods","order":2,"path":"tilesets/TS_Foods/TS_Foods.yy",},
+  ],
 }
