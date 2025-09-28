@@ -27,29 +27,35 @@ if(player != noone){
 			var two = keyboard_check_pressed(ord("2"));
 			var three = keyboard_check_pressed(ord("3"));
 		
-			// salt and pepper
-			if(one){
-				// increase player damage
-				//with(obj_player)
-				//{
-					//no implemneted yet
-				//}
-			}
 			//Potato
-			else if(two)
-			{
+			if(one){
 				with(obj_bbq)
 				{
-					obj_bbq.hp += 10;
-					obj_bbq.hp = min(obj_bbq.hp, 50);
+					if (global.Coins >= 10){
+						obj_bbq.hp += 10;
+						obj_bbq.hp = min(obj_bbq.hp, 50);
+						global.Coins -= 10
+					}
+				}
+			}
+			
+			// Salt
+			else if(two)
+			{
+				if (global.Coins >= 15){
+					global.RecallKnivesCooldown= max(5, global.RecallKnivesCooldown-1)  
+					global.Coins -= 15
 				}
 			}
 	
 			// Thyme 
 			else if(three)
 			{
-				global.TimeStopCoolDownDuration = max(5, global.TimeStopCoolDownDuration-1)  
-				global.TimeStopDuration += 1
+				if (global.Coins >= 20){
+					global.TimeStopCoolDownDuration = max(5, global.TimeStopCoolDownDuration-1)  
+					global.TimeStopDuration += 1
+					global.Coins -= 20
+				}
 			}
 			
 			// apply blue tint

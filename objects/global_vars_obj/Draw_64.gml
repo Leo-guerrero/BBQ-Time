@@ -32,6 +32,9 @@ if(global.BBQHP > 40){
 // draw ability gui
 if (global.GameState == GameStates.PLAY){
 	
+	//coins
+	draw_sprite_stretched(spr_money, 0, display_get_gui_width()/2 - 300, display_get_gui_height()-80, 75, 75)
+	draw_text(display_get_gui_width()/2 - 270, display_get_gui_height()-60, "x"+string(global.Coins))
 
 	draw_sprite_stretched(spr_icon_Dilate, 0, display_get_gui_width()/2 - 150, display_get_gui_height()-80, 75, 75)
 	

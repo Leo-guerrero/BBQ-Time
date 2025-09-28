@@ -11,6 +11,8 @@ global.IsRecallKnives = false;
 global.MaxKnives = 10;
 global.KnifeCount = global.MaxKnives;
 
+global.Coins = 0
+
 global.PlayerFace = "DOWN";
 global.BBQHP = 50;
 global.StaticBBQHP = 10 * 50;

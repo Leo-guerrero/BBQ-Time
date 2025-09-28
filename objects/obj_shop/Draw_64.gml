@@ -19,12 +19,12 @@ if (inShopMenu)
     draw_set_halign(fa_center);
     draw_set_valign(fa_top);
     
-    draw_text(gui_x + rect_w / 2, gui_y + 20, "SHOP MENU");
+    draw_text(gui_x + rect_w / 2, gui_y + 20, "SHOP MENU (number keys to buy)");
     
     // Example menu option
-    draw_text(gui_x + rect_w / 2, gui_y + 60, "1. Salt and Pepper (More Damage)");
-    draw_text(gui_x + rect_w / 2, gui_y + 120, "2. Potato (Health)");
-    draw_text(gui_x + rect_w / 2, gui_y + 180, "3. Thyme (Decrease Time Cooldown Duration)");
+    draw_text(gui_x + rect_w / 2, gui_y + 60, "1. Potato (BBQ Health) - 10$" );
+    draw_text(gui_x + rect_w / 2, gui_y + 120, "2. Salt (Lower Knife Recall Cooldown) - 15$");
+    draw_text(gui_x + rect_w / 2, gui_y + 180, "3. Thyme (Time-stop Upgrade) - 20$");
     
     // 3. Reset settings
     draw_set_halign(fa_left);
