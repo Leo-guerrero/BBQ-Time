@@ -31,6 +31,7 @@ if (!global.IsRecallKnives){
 	speed = BASE_SPEED * room_speed/60
 	var target = [obj_player.x, obj_player.y]
 	direction = point_direction(x, y, target[0], target[1])
+	image_angle = direction
 	if(place_meeting(x,y,obj_player)){
 		global.KnifeCount++;
 		instance_destroy();

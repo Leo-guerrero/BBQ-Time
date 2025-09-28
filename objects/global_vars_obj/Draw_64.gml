@@ -49,9 +49,14 @@ if (global.GameState == GameStates.PLAY){
 	} else {
 		draw_rectangle(display_get_gui_width()/2-50, display_get_gui_height()-5-75*(obj_player.recall_cooldown_remaining/global.RecallKnivesCooldown), display_get_gui_width()/2+25, display_get_gui_height()-5, false)
 	}
-	
 	draw_set_alpha(1)
 	draw_set_colour(c_white);
+	
+	draw_set_font(-1)
+	draw_text(display_get_gui_width()/2 - 134, display_get_gui_height()-25, "[SPACE]")
+	draw_text(display_get_gui_width()/2, display_get_gui_height()-25, "[F]")
+	draw_set_font(font_menu)
+
 
 	draw_sprite_stretched(spr_icon_empty, 0, display_get_gui_width()/2 + 50, display_get_gui_height()-80, 75, 75)
 	draw_sprite_stretched(spr_knife, 0, display_get_gui_width()/2 + 55, display_get_gui_height()-75, 30, 30)
