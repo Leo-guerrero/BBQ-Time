@@ -35,6 +35,7 @@
   },
   "name":"BBQ Time",
   "resources":[
+    {"id":{"name":"fnt_jason","path":"fonts/fnt_jason/fnt_jason.yy",},},
     {"id":{"name":"font_menu","path":"fonts/font_menu/font_menu.yy",},},
     {"id":{"name":"camera","path":"objects/camera/camera.yy",},},
     {"id":{"name":"global_vars_obj","path":"objects/global_vars_obj/global_vars_obj.yy",},},
@@ -80,6 +81,7 @@
     {"id":{"name":"Player_left_spr","path":"sprites/Player_left_spr/Player_left_spr.yy",},},
     {"id":{"name":"Player_right_spr","path":"sprites/Player_right_spr/Player_right_spr.yy",},},
     {"id":{"name":"Player_up_spr","path":"sprites/Player_up_spr/Player_up_spr.yy",},},
+    {"id":{"name":"ShopDealer","path":"sprites/ShopDealer/ShopDealer.yy",},},
     {"id":{"name":"spr_BBQ_health_bar_back","path":"sprites/spr_BBQ_health_bar_back/spr_BBQ_health_bar_back.yy",},},
     {"id":{"name":"spr_BBQ_health_bar","path":"sprites/spr_BBQ_health_bar/spr_BBQ_health_bar.yy",},},
     {"id":{"name":"spr_bbq","path":"sprites/spr_bbq/spr_bbq.yy",},},

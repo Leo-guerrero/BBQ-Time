@@ -1,33 +1,53 @@
 
+var player = instance_find(obj_player, 0); 
 
-if(isShopping){
+//player exists
+if(player != noone){ 
 	
-	//play dilatino effect set to half speed
-	
-	global.DilationFactor = 0.5;
-	
-	var one = keyboard_check_pressed(ord("1"));
-	var two = keyboard_check_pressed(ord("2"));
-		
-	// salt and pepper
-	if(one){
-		// increase player damage
-		with(obj_player)
-		{
-			//no implemneted yet
-		}
-	}
-	// Thyme 
-	else if(two)
+	//player close to shop
+	if(distance_to_point(player.x, player.y) < 20)
 	{
-		with(obj_player)
-		{
-			// global time stop duratoin
-		}
-	}
 		
+		if(keyboard_check_pressed(ord("E")) and !inShopMenu)
+		{
+			inShopMenu = true;
+			global.DilationFactor = 0.5;
+		}
+		
+		if(inShopMenu)
+		{
+			var one = keyboard_check_pressed(ord("1"));
+			var two = keyboard_check_pressed(ord("2"));
+			var three = keyboard_check_pressed(ord("3"));
+		
+			// salt and pepper
+			if(one){
+				// increase player damage
+				//with(obj_player)
+				//{
+					//no implemneted yet
+				//}
+			}
+			//Potato
+			else if(two)
+			{
+				with(obj_bbq)
+				{
+					obj_bbq.hp += 10;
+					obj_bbq.hp = min(obj_bbq.hp, 50);
+				}
+			}
 	
-
-	
+			// Thyme 
+			else if(three)
+			{
+				global.TimeStopCoolDownDuration += 1;
+			}
+		}
+	}else
+	{
+		//set time dilation back to 1
+		global.DilationFactor = 1;
+		inShopMenu = false; 
+	}
 }
-
