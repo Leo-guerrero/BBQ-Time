@@ -5,7 +5,6 @@ if(global.game_paused){
 var dt =  room_speed/60 * global.DilationFactor
 
 depth = -y - 1
-var dt =  room_speed/60
 
 
 var target = [obj_bbq.x, obj_bbq.y];
@@ -24,14 +23,7 @@ if(place_meeting(x,y + yspeed, obj_main_object)){
 }
 
 
-
-
-if(xspeed > 0 || xspeed == 0){
-	image_xscale = -1
-}else if (xspeed < 0 || xspeed == 0){
-	image_xscale = 1;
-}
-
+image_xscale = (xspeed > 0) ? 1 : -1
 
 
 // TODO vary with time dilation
@@ -80,15 +72,28 @@ switch (cur_state)
 if(place_meeting(x,y,obj_thrown_knife)){
 	var inst = instance_place(x,y,obj_thrown_knife);
 	
-	if(inst.BASE_SPEED > 0){
-		hp--;
-	}
+	if (!hit_flash_active) {
+		hit_flash_active = true
 	
+		if(inst.BASE_SPEED > 0){
+			hp -= obj_thrown_knife.BASE_DMG;
+		}
+	}
 }
 
 if(hp <= 0){
 	instance_destroy();
 }
 
+
+if(hit_flash_active)
+{
+	hit_flash_timer += dt/60;
+	if(hit_flash_timer > INVINCIBLE_DUR)
+	{
+		hit_flash_timer = 0
+		hit_flash_active = false;
+	}
+}
 	
 
