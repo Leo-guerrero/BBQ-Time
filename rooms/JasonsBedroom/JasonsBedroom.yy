@@ -20,14 +20,12 @@
     {"name":"inst_CDDD5B8","path":"rooms/JasonsBedroom/JasonsBedroom.yy",},
     {"name":"inst_6E083593","path":"rooms/JasonsBedroom/JasonsBedroom.yy",},
     {"name":"inst_545261AA","path":"rooms/JasonsBedroom/JasonsBedroom.yy",},
-    {"name":"inst_13D09A09","path":"rooms/JasonsBedroom/JasonsBedroom.yy",},
     {"name":"inst_55180DE","path":"rooms/JasonsBedroom/JasonsBedroom.yy",},
     {"name":"inst_47DDB66C","path":"rooms/JasonsBedroom/JasonsBedroom.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v2","%Name":"inst_13D09A09","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_13D09A09","objectId":{"name":"Player","path":"objects/Player/Player.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":768.0,"y":256.0,},
         {"$GMRInstance":"v2","%Name":"inst_55180DE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_55180DE","objectId":{"name":"obj_test_time","path":"objects/obj_test_time/obj_test_time.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":736.0,"y":320.0,},
         {"$GMRInstance":"v2","%Name":"inst_145623E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_145623E","objectId":{"name":"obj_bbq","path":"objects/obj_bbq/obj_bbq.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":765.0,"y":294.0,},
         {"$GMRInstance":"v2","%Name":"inst_50BD2307","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_50BD2307","objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":731.0,"y":305.0,},

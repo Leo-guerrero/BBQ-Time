@@ -38,6 +38,11 @@ switch(State){
         break;
 
     case PlayerState.MOVING:
+	if(up || down || left || right){
+            State = (run ? PlayerState.RUNNING : PlayerState.MOVING);
+        }
+		
+		
     case PlayerState.RUNNING:
         move_speed = State == PlayerState.RUNNING ? 2.4 : 1.2;
 
