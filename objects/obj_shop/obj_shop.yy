@@ -31,7 +31,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"ShopDealer",
+    "path":"sprites/ShopDealer/ShopDealer.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
