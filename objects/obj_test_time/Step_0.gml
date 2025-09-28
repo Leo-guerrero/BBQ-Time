@@ -1,6 +1,4 @@
 
-show_debug_message(global.playerTimerScore);
-
 if(keyboard_check_pressed(vk_space))
 {
 	global.playerTimerScore--;
