@@ -9,7 +9,6 @@ global.StaticBBQHP = 10 * 50;
 global.HealthBarSubImage = 0;
 
 global.DilationFactor = 1;
-global.game_paused = false;
 
 enum GameStates { MENU, PLAY, PAUSE, GAMEOVER }
 global.GameState = GameStates.MENU;
