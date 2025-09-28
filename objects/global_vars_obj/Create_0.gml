@@ -4,9 +4,9 @@ global.Time = room_speed * 60 * 1;
 global.TimeDisplay = global.Time / 60 ;
 
 global.TimeStopDuration = 5;//how long you can use the ability
-global.TimeStopCoolDownDuration = 20; //time between using the ability again
+global.TimeStopCoolDownDuration = 15; //time between using the ability again
 
-global.RecallKnivesCooldown = 15;
+global.RecallKnivesCooldown = 10;
 global.IsRecallKnives = false;
 global.MaxKnives = 10;
 global.KnifeCount = global.MaxKnives;
