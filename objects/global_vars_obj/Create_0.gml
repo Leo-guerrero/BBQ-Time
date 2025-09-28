@@ -5,6 +5,7 @@ global.TimeDisplay = global.Time / 60 ;
 global.PlayerFace = "DOWN";
 global.KnifeCount = 10;
 global.BBQHP = 50;
+global.StaticBBQHP = 10 * 50;
 global.HealthBarSubImage = 0;
 
 global.DilationFactor = 1;
