@@ -83,8 +83,13 @@ if(place_meeting(x,y,obj_thrown_knife)){
 
 if(place_meeting(x,y,hurt_box)){
 	
-	var inst_hurt = instance_place(x,y,hurt_box);
-	hp -= inst_hurt.damage;
+	if(!hit_flash_active){
+		var inst_hurt = instance_place(x,y,hurt_box)
+		hp -= inst_hurt.damage;
+		
+		hit_flash_active = true
+	}
+	
 }
 
 if(hp <= 0){

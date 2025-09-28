@@ -24,10 +24,8 @@ attack_target = noone
 for_back_heath_bar = hp / maxHp;
 
 
-
 // for hit flash
 hit_flash_active = false; // start off (not flashing)
 hit_flash_timer = 0;
 INVINCIBLE_DUR = 0.2
-
 

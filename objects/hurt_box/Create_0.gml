@@ -1,2 +1,2 @@
 life_time = 5;
-damage = 1;
+damage = 7;
