@@ -3,3 +3,4 @@ event_inherited();
 
 // take player to room
 room_goto(JasonsBedroom);
+global.GameState = GameStates.PLAY;

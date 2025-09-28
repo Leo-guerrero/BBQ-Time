@@ -11,8 +11,9 @@ if (room == JasonsBedroom)
 //draw_text(x,y + 10, global.Time);
 
 
-
-draw_sprite_stretched(spr_BBQ_health_bar,global.HealthBarSubImage,(display_get_gui_width() / 2) - 220, (display_get_gui_height() / 2) - 290, 10 * global.BBQHP,20);
+if (global.GameState == GameStates.PLAY){
+	draw_sprite_stretched(spr_BBQ_health_bar,global.HealthBarSubImage,(display_get_gui_width() / 2) - 220, (display_get_gui_height() / 2) - 290, 10 * global.BBQHP,20);
+}
 
 if(global.BBQHP > 40){
 	global.HealthBarSubImage = 0;
