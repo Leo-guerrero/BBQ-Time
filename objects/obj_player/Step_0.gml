@@ -220,12 +220,19 @@ if (timestop_cooldown_remaining == 0) {
 		fx_set_parameter(_fx_tint, "g_Intensity", (is_timestop) ? 1-(timestop_elapsed/global.TimeStopDuration) : 0);
 		layer_set_fx("Dilation", _fx_tint);
 		
-		if (timestop_elapsed >= global.TimeStopDuration) {
-			is_timestop = false;
-			global.DilationFactor = 1
-			timestop_elapsed = 0
-			timestop_cooldown_remaining = global.TimeStopCoolDownDuration;
-		}
+
+	} 
+}
+
+if(global.CurrentPlayerHP <= 0){
+	global.PlayerRespawnDelay = room_speed * 5;
+	instance_destroy();
+
+	if (timestop_elapsed >= global.TimeStopDuration) {
+		is_timestop = false;
+		global.DilationFactor = 1
+		timestop_elapsed = 0
+		timestop_cooldown_remaining = global.TimeStopCoolDownDuration;
 	}
 } else {
 	timestop_cooldown_remaining = max(0, timestop_cooldown_remaining - room_speed/3600)

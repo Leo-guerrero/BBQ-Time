@@ -29,6 +29,14 @@ if(global.BBQHP > 40){
 }
 
 
+if(!instance_exists(obj_player) && room == JasonsBedroom){
+	
+	var Respawnseconds = floor(global.PlayerRespawnDelay / room_speed);
+
+	draw_text_transformed(display_get_gui_width() / 2, display_get_height() / 2, string(Respawnseconds), 2,2,0);
+}
+
+
 // draw ability gui
 if (global.GameState == GameStates.PLAY){
 	
@@ -65,3 +73,4 @@ if (global.GameState == GameStates.PLAY){
 	draw_sprite_stretched(spr_knife, 0, display_get_gui_width()/2 + 55, display_get_gui_height()-75, 30, 30)
 	draw_text(display_get_gui_width()/2 + 74 - 20*(string_length(string(global.KnifeCount))-1), display_get_gui_height()-65, string(global.KnifeCount))
 }
+
