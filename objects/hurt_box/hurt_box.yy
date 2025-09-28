@@ -35,5 +35,5 @@
     "path":"sprites/spr_hurt_box/spr_hurt_box.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
