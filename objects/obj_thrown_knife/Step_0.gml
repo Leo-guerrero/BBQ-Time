@@ -7,14 +7,17 @@ if(life_time > 0){
 }
 
 if(BASE_SPEED > 0){
-	BASE_SPEED -= 0.05;
+	BASE_SPEED -= 0.09;
+	if(BASE_SPEED < 0){
+		BASE_SPEED = 0;	
+	}
 }
 
 if(life_time <= 0){
 	BASE_SPEED = 0;
 }
 
-if(place_meeting(x,y,obj_player) && keyboard_check_pressed(ord("E"))){
+if(place_meeting(x,y,obj_player) && BASE_SPEED == 0){
 	global.KnifeCount++;
 	instance_destroy();
 }
