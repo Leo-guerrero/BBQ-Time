@@ -72,6 +72,8 @@ if (global.GameState == GameStates.GAMEOVER) {
         audio_stop_all();
         instance_activate_all();   // re-activate world (you paused with deactivate_all)
         room_restart();
+		global.damageLevelKnifes = 0;
+		global.gold = 0;
 		global.GameState = GameStates.RESTART;
 
     }
@@ -89,6 +91,8 @@ if (global.GameState == GameStates.GAMEOVER) {
         audio_stop_all();
         instance_activate_all();
 		global.GameState = GameStates.MENU
+		global.damageLevelKnifes = 0;
+		global.gold = 0;
         room_goto(room_menu);        // <-- replace with your menu room asset
     }
 }

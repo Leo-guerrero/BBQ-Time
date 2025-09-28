@@ -63,7 +63,19 @@ switch (cur_state)
 			//show_debug_message(attack_target)
 			if instance_place(x, y, attack_target) {
 				
+				if(place_meeting(x,y,obj_bbq)){
+					audio_play_sound(metal_hit_bbq, 10,false);
+				}
+				
+				
+				
+				
 				attack_target.hp -= BASE_DMG
+				
+			}
+			
+			
+			if(instance_place(x,y,obj_player)){
 				global.CurrentPlayerHP -= 20;
 			}
 			
@@ -78,6 +90,7 @@ if(place_meeting(x,y,obj_thrown_knife)){
 	if (!hit_flash_active) {
 
 		if(inst.BASE_SPEED > 0){
+			audio_play_sound(zombie_hit, 10, false);
 			hit_flash_active = true
 			hp -= obj_thrown_knife.BASE_DMG;
 		}
@@ -89,13 +102,14 @@ if(place_meeting(x,y,hurt_box)){
 	if(!hit_flash_active){
 		var inst_hurt = instance_place(x,y,hurt_box)
 		hp -= inst_hurt.damage;
-		
+		audio_play_sound(zombie_hit, 10, false);
 		hit_flash_active = true
 	}
 	
 }
 
 if(hp <= 0){
+	global.gold++;
 	instance_destroy();
 }
 

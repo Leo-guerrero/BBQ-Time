@@ -34,3 +34,5 @@ recall_cooldown_remaining = 0;
 
 hp = 100
 for_back_heath_bar = global.CurrentPlayerHP / global.MaxPlayerHp;
+
+base_damage = 7;

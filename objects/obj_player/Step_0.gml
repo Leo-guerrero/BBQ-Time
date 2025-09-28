@@ -3,6 +3,12 @@ if(global.GameState == GameStates.GAMEOVER){
 	exit;
 }
 
+if(global.damageLevelKnifes > 0){
+	base_damage = 12;
+} else {
+	base_damage = 7;
+}
+
 depth = -y
 
 // 1. Input check (once per frame)
@@ -91,19 +97,23 @@ switch(State){
         switch(global.PlayerFace){
             case "DOWN":  
 				sprite_index = attack_down;
-				instance_create_depth(x,y + 6,-999,hurt_box);
+				var inst_hurt_d = instance_create_depth(x,y + 6,-999,hurt_box);
+				inst_hurt_d.damage = base_damage;
 				break;
             case "UP":    
 				sprite_index = attack_up;    
-				instance_create_depth(x,y - 6,-999,hurt_box);
+				var inst_hurt_u = instance_create_depth(x,y - 6,-999,hurt_box);
+				inst_hurt_u.damage = base_damage;
 				break;
             case "LEFT":  
 				sprite_index = attack_left;  
-				instance_create_depth(x - 6,y,-999,hurt_box);
+				var inst_hurt_l = instance_create_depth(x - 6,y,-999,hurt_box);
+				inst_hurt_l.damage = base_damage;
 				break;
             case "RIGHT": 
 				sprite_index = attack_right; 
-				instance_create_depth(x + 6,y,-999,hurt_box);
+				var inst_hurt_r =instance_create_depth(x + 6,y,-999,hurt_box);
+				inst_hurt_r.damage = base_damage;
 				break;
         }
 
@@ -216,7 +226,7 @@ if (timestop_cooldown_remaining == 0) {
 if(global.CurrentPlayerHP <= 0){
 	global.PlayerRespawnDelay = room_speed * 5;
 	instance_destroy();
-}
+
 
 		if (timestop_elapsed >= global.TimeStopDuration) {
 			is_timestop = false;
@@ -224,7 +234,7 @@ if(global.CurrentPlayerHP <= 0){
 			timestop_elapsed = 0
 			timestop_cooldown_remaining = global.TimeStopCoolDownDuration;
 		}
-	}
+
 } else {
 	timestop_cooldown_remaining = max(0, timestop_cooldown_remaining - room_speed/3600)
 }

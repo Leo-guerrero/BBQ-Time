@@ -5,7 +5,7 @@ if (inShopMenu)
 	// 1. Draw the background rectangle (the black square)
     draw_set_colour(c_black);
 	
-	draw_set_font(fnt_jason);
+	//draw_set_font(fnt_jason);
 
     // Draw a FILLED rectangle from the calculated top-left (gui_x, gui_y)
     // to the bottom-right corner.
@@ -16,12 +16,12 @@ if (inShopMenu)
     draw_set_halign(fa_center);
     draw_set_valign(fa_top);
     
-    draw_text(gui_x + rect_w / 2, gui_y + 20, "SHOP MENU");
+    draw_text_transformed(gui_x + rect_w / 2, gui_y + 20, "SHOP MENU",0.4,0.4,0);
     
     // Example menu option
-    draw_text(gui_x + rect_w / 2, gui_y + 60, "1. Salt and Pepper (More Damage)");
-    draw_text(gui_x + rect_w / 2, gui_y + 120, "2. Potato (Health)");
-    draw_text(gui_x + rect_w / 2, gui_y + 180, "3. Thyme (Decrease Time Cooldown Duration)");
+    draw_text_transformed(gui_x + rect_w / 2, gui_y + 60, "1.(Press 1) Salt and Pepper\n (More Damage)",0.4,0.4,0);
+    draw_text_transformed(gui_x + rect_w / 2, gui_y + 120, "2.(Press 2) Potato\n (Health)",0.4,0.4,0);
+    draw_text_transformed(gui_x + rect_w / 2, gui_y + 180, "3.(Press 3) Thyme\n (Decrease Time Cooldown Duration)",0.4,0.4,0);
     
     // 3. Reset settings
     draw_set_halign(fa_left);

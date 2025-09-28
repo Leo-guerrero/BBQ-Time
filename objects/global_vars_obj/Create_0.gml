@@ -1,4 +1,4 @@
-global.Time = room_speed * 60 * 1;
+global.Time = room_speed * 60 * 3;
 //global.Time = room_speed * 2 * 1;
 
 global.TimeDisplay = global.Time / 60 ;
@@ -30,3 +30,7 @@ window_set_fullscreen(fullscreen);
 global.CurrentPlayerHP = 100;
 global.MaxPlayerHp = 100;
 global.PlayerRespawnDelay = 0;
+
+global.damageLevelKnifes = 0;
+
+global.gold = 0;

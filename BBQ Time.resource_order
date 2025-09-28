@@ -1,0 +1,7 @@
+{
+  "FolderOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"metal_hit_bbq","order":2,"path":"sounds/metal_hit_bbq/metal_hit_bbq.yy",},
+    {"name":"zombie_hit","order":1,"path":"sounds/zombie_hit/zombie_hit.yy",},
+  ],
+}

@@ -7,11 +7,13 @@ var seconds = total_seconds mod 60;
 if (room == JasonsBedroom)
 {
 	draw_text(32, 32, string(minutes) + ":" + string_format(seconds, 2, 0));
+		draw_text_transformed((display_get_gui_width() / 2) * 1.7, (display_get_height() / 2) / 5,"Gold: " + string(global.gold), 1,1,0);
 }
 //draw_text(x,y + 10, global.Time);
 
 
 if (global.GameState == GameStates.PLAY){
+	draw_text_transformed((display_get_gui_width() / 2) - 200, 10,"BBQ Health:", 0.5,0.5,0);
 	draw_sprite_stretched(spr_BBQ_health_bar_back,0,(display_get_gui_width() / 2) - 220, 30, global.StaticBBQHP,20);
 	draw_sprite_stretched(spr_BBQ_health_bar,global.HealthBarSubImage,(display_get_gui_width() / 2) - 220, 30, 10 * global.BBQHP,20);
 }
@@ -38,7 +40,7 @@ if(!instance_exists(obj_player) && room == JasonsBedroom){
 
 
 // draw ability gui
-if (global.GameState == GameStates.PLAY){
+if (global.GameState == GameStates.PLAY && instance_exists(obj_player)){
 	
 
 	draw_sprite_stretched(spr_icon_Dilate, 0, display_get_gui_width()/2 - 150, display_get_gui_height()-80, 75, 75)

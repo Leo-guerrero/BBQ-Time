@@ -1,4 +1,4 @@
-
+depth = -y - 10
 var player = instance_find(obj_player, 0); 
 
 //player exists
@@ -21,20 +21,23 @@ if(player != noone){
 			var three = keyboard_check_pressed(ord("3"));
 		
 			// salt and pepper
-			if(one){
+			if(one && global.gold > 10 && global.damageLevelKnifes != 1){
 				// increase player damage
 				//with(obj_player)
 				//{
 					//no implemneted yet
 				//}
+				global.damageLevelKnifes = 1;
+				global.gold -= 10;
 			}
 			//Potato
-			else if(two)
+			else if(two && global.gold > 15 && obj_bbq.hp < 50)
 			{
 				with(obj_bbq)
 				{
 					obj_bbq.hp += 10;
 					obj_bbq.hp = min(obj_bbq.hp, 50);
+					global.gold -= 15;
 				}
 			}
 	

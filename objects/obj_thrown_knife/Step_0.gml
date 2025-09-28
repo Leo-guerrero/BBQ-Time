@@ -1,5 +1,12 @@
 depth = -y + 1
 
+if(global.damageLevelKnifes > 0){
+	BASE_DMG = 18;
+} else {
+	BASE_DMG = 10;
+}
+
+
 if (!global.IsRecallKnives){
 	speed = BASE_SPEED * room_speed/60  * global.DilationFactor
 
