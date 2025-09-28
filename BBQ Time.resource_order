@@ -1,0 +1,6 @@
+{
+  "FolderOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"obj_gui","order":1,"path":"objects/obj_gui/obj_gui.yy",},
+  ],
+}
