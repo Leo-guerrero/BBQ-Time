@@ -81,11 +81,8 @@
     {"id":{"name":"Player_left_spr","path":"sprites/Player_left_spr/Player_left_spr.yy",},},
     {"id":{"name":"Player_right_spr","path":"sprites/Player_right_spr/Player_right_spr.yy",},},
     {"id":{"name":"Player_up_spr","path":"sprites/Player_up_spr/Player_up_spr.yy",},},
-<<<<<<< HEAD
-    {"id":{"name":"spr_BBQ_health_bar_back","path":"sprites/spr_BBQ_health_bar_back/spr_BBQ_health_bar_back.yy",},},
-=======
     {"id":{"name":"ShopDealer","path":"sprites/ShopDealer/ShopDealer.yy",},},
->>>>>>> shop_feature_complete
+    {"id":{"name":"spr_BBQ_health_bar_back","path":"sprites/spr_BBQ_health_bar_back/spr_BBQ_health_bar_back.yy",},},
     {"id":{"name":"spr_BBQ_health_bar","path":"sprites/spr_BBQ_health_bar/spr_BBQ_health_bar.yy",},},
     {"id":{"name":"spr_bbq","path":"sprites/spr_bbq/spr_bbq.yy",},},
     {"id":{"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},},

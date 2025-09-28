@@ -8,7 +8,7 @@ global.TimeStopCoolDownDuration = 10; //time between using the ability again
 
 global.PlayerFace = "DOWN";
 global.KnifeCount = 10;
-global.BBQHP = 50;
+global.BBQHP = 10;
 global.StaticBBQHP = 10 * 50;
 global.HealthBarSubImage = 0;
 

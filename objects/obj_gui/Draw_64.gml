@@ -47,6 +47,7 @@ if (global.GameState == GameStates.GAMEOVER) {
     draw_set_color(c_yellow);
     draw_set_halign(fa_center); draw_set_valign(fa_middle);
     draw_text(gw*0.5, gh*0.25, end_reason);
+	
 
     draw_set_color(c_white);
     draw_text(gw*0.5, gh*0.35, "Rank: " + global.Rank);
@@ -74,6 +75,7 @@ if (global.GameState == GameStates.GAMEOVER) {
         instance_activate_all();   // re-activate world (you paused with deactivate_all)
         room_restart();
 		global.GameState = GameStates.PLAY;
+		global.BBQHP = 50;
     }
 
     // Menu button rect
