@@ -11,8 +11,8 @@ var target = [obj_bbq.x, obj_bbq.y];
 //var target = [po_bbq.x, po_bbq.y];
 direction = point_direction(x, y, target[0], target[1])
 
-var xspeed = lengthdir_x(BASE_SPEED, direction);
-var yspeed = lengthdir_y(BASE_SPEED, direction);
+var xspeed = lengthdir_x(BASE_SPEED, direction)*global.DilationFactor;
+var yspeed = lengthdir_y(BASE_SPEED, direction)*global.DilationFactor;
 
 
 if(place_meeting(x + xspeed, y, obj_main_object)){
@@ -76,7 +76,7 @@ if(place_meeting(x,y,obj_thrown_knife)){
 	var inst = instance_place(x,y,obj_thrown_knife);
 	
 	if (!hit_flash_active) {
-	
+
 		if(inst.BASE_SPEED > 0){
 			hit_flash_active = true
 			hp -= obj_thrown_knife.BASE_DMG;

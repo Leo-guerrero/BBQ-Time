@@ -178,3 +178,7 @@ if (global.DilationFactor != 1) {
 		
 	} 
 }
+
+//if (global.KnifeCount == 0) {
+//	global.IsRecallKnives = true;	
+//}
