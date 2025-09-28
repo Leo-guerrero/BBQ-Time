@@ -73,9 +73,9 @@ if(place_meeting(x,y,obj_thrown_knife)){
 	var inst = instance_place(x,y,obj_thrown_knife);
 	
 	if (!hit_flash_active) {
-		hit_flash_active = true
 	
 		if(inst.BASE_SPEED > 0){
+			hit_flash_active = true
 			hp -= obj_thrown_knife.BASE_DMG;
 		}
 	}

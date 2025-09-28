@@ -15,7 +15,7 @@ void main() {
     float pulse = abs(sin(u_time * 8.0)); // speed multiplier for flashing
 	
     // Mix between normal color and red
-    vec3 red_tint = mix(base_col.rgb, vec3(5.0, 0.0, 0.0), pulse);
+    vec3 red_tint = mix(base_col.rgb, vec3(3.0, 0.0, 0.0), pulse);
 
     // Only apply when u_hit_flash is 1
     gl_FragColor = vec4(mix(base_col.rgb, red_tint, u_hit_flash_timer), base_col.a);
