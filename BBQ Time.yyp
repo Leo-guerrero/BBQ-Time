@@ -54,6 +54,7 @@
     {"id":{"name":"obj_pinetree","path":"objects/obj_pinetree/obj_pinetree.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_shader","path":"objects/obj_shader/obj_shader.yy",},},
+    {"id":{"name":"obj_shop","path":"objects/obj_shop/obj_shop.yy",},},
     {"id":{"name":"obj_test_time","path":"objects/obj_test_time/obj_test_time.yy",},},
     {"id":{"name":"obj_thrown_knife","path":"objects/obj_thrown_knife/obj_thrown_knife.yy",},},
     {"id":{"name":"obj_tree","path":"objects/obj_tree/obj_tree.yy",},},
