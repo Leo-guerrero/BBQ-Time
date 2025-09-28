@@ -10,22 +10,37 @@ if (room == JasonsBedroom)
 }
 //draw_text(x,y + 10, global.Time);
 
+var icon_index = 0
+
+
+
+if(global.BBQHP > 40){
+	global.HealthBarSubImage = 0;
+	if (global.BBQHP == 50) {
+		icon_index = 0	
+	} else {
+		icon_index = 1
+	}
+} else if (global.BBQHP > 30 && global.BBQHP <= 40){
+	global.HealthBarSubImage = 1;
+	icon_index = 2
+} else if (global.BBQHP > 20 && global.BBQHP <= 30){
+	global.HealthBarSubImage = 2;
+	icon_index = 3
+} else if(global.BBQHP > 10 && global.BBQHP <= 20){
+	global.HealthBarSubImage = 3;
+	icon_index = 4
+} else if(global.BBQHP <= 10){
+	global.HealthBarSubImage = 4;
+	icon_index = 5
+}
+
+show_debug_message(icon_index)
 
 if (global.GameState == GameStates.PLAY){
 	draw_sprite_stretched(spr_BBQ_health_bar_back,0,(display_get_gui_width() / 2) - 220, 30, global.StaticBBQHP,20);
 	draw_sprite_stretched(spr_BBQ_health_bar,global.HealthBarSubImage,(display_get_gui_width() / 2) - 220, 30, 10 * global.BBQHP,20);
-}
-
-if(global.BBQHP > 40){
-	global.HealthBarSubImage = 0;
-} else if (global.BBQHP > 30 && global.BBQHP < 40){
-	global.HealthBarSubImage = 1;
-} else if (global.BBQHP > 20 && global.BBQHP < 30){
-	global.HealthBarSubImage = 2;
-} else if(global.BBQHP > 10 && global.BBQHP < 20){
-	global.HealthBarSubImage = 3;
-} else if(global.BBQHP < 10){
-	global.HealthBarSubImage = 4;
+	draw_sprite_stretched(spr_food_indicator,icon_index, (display_get_gui_width() / 2) - 270, 20, 50, 50)
 }
 
 

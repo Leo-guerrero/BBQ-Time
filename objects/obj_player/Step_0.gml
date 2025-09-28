@@ -224,6 +224,8 @@ if (timestop_cooldown_remaining == 0) {
 	} 
 }
 
+global.CurrentPlayerHP = hp;
+
 if(global.CurrentPlayerHP <= 0){
 	global.PlayerRespawnDelay = room_speed * 5;
 	instance_destroy();

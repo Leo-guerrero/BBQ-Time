@@ -1,4 +1,7 @@
 {
   "FolderOrderSettings":[],
-  "ResourceOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"obj_food","order":1,"path":"objects/obj_food/obj_food.yy",},
+    {"name":"spr_food_indicator","order":1,"path":"sprites/spr_food_indicator/spr_food_indicator.yy",},
+  ],
 }

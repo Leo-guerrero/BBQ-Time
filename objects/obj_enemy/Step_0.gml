@@ -64,7 +64,6 @@ switch (cur_state)
 			if instance_place(x, y, attack_target) {
 				
 				attack_target.hp -= BASE_DMG
-				global.CurrentPlayerHP -= 20;
 			}
 			
 			sprite_index = spr_zombie_R
