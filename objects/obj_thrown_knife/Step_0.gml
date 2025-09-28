@@ -8,7 +8,7 @@ if (!global.IsRecallKnives){
 	}
 
 	if(BASE_SPEED > 0){
-		BASE_SPEED -= 0.09;
+		BASE_SPEED -= 0.09*global.DilationFactor;
 		if(BASE_SPEED < 0){
 			BASE_SPEED = 0;	
 		}

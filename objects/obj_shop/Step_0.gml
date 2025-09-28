@@ -41,7 +41,8 @@ if(player != noone){
 			// Thyme 
 			else if(three)
 			{
-				global.TimeStopCoolDownDuration += 1;
+				global.TimeStopCoolDownDuration = max(5, global.TimeStopCoolDownDuration-1)  
+				global.TimeStopDuration += 1
 			}
 		}
 	}else

@@ -12,6 +12,7 @@ left  = keyboard_check(ord("A"));
 right = keyboard_check(ord("D"));
 attack = mouse_check_button_pressed(mb_left);
 run = keyboard_check(vk_shift);
+timestop = keyboard_check(vk_space)
 
 // 2. State machine
 switch(State){
@@ -171,6 +172,40 @@ var _fx_tint = fx_create("_filter_colourise");
 fx_set_parameter(_fx_tint, "g_TintCol", [0, 0, 1, 0.01]);
 fx_set_parameter(_fx_tint, "g_Intensity", min(abs(1-global.DilationFactor), 1));
 layer_set_fx("Dilation", _fx_tint);
+
+
+// handle time dilation
+if (timestop_cooldown_remaining == 0) {
+	
+	if (timestop && !is_timestop) {
+		is_timestop = true;
+		global.DilationFactor = 0.5
+	} else if (is_timestop) {
+		timestop_elapsed += room_speed / 3600;
+		if (timestop_elapsed >= global.TimeStopDuration) {
+				is_timestop = false;
+				global.DilationFactor = 1
+				timestop_elapsed = 0
+				is_knife_recall = true;
+				timestop_cooldown_remaining = global.TimeStopCoolDownDuration;
+		}
+	}
+} else {
+	timestop_cooldown_remaining = max(0, timestop_cooldown_remaining - room_speed/3600)
+}
+
+if (is_knife_recall) {
+	global.IsRecallKnives = true;
+	if (global.KnifeCount == 10) {
+		global.IsRecallKnives = false;
+		is_knife_recall = false;
+	}
+}
+
+
+
+
+
 
 //if (global.KnifeCount == 0) {
 //	global.IsRecallKnives = true;	
