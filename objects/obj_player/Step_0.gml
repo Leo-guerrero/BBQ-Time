@@ -87,15 +87,28 @@ switch(State){
 		xspeed = (right - left) * move_speed;
         yspeed = (down - up) * move_speed;
         switch(global.PlayerFace){
-            case "DOWN":  sprite_index = attack_down;  break;
-            case "UP":    sprite_index = attack_up;    break;
-            case "LEFT":  sprite_index = attack_left;  break;
-            case "RIGHT": sprite_index = attack_right; break;
+            case "DOWN":  
+				sprite_index = attack_down;
+				instance_create_depth(x,y + 6,-999,hurt_box);
+				break;
+            case "UP":    
+				sprite_index = attack_up;    
+				instance_create_depth(x,y - 6,-999,hurt_box);
+				break;
+            case "LEFT":  
+				sprite_index = attack_left;  
+				instance_create_depth(x - 6,y,-999,hurt_box);
+				break;
+            case "RIGHT": 
+				sprite_index = attack_right; 
+				instance_create_depth(x + 6,y,-999,hurt_box);
+				break;
         }
 
         // Wait a bit so attack animation plays
         if(image_index >= sprite_get_number(sprite_index) - 1){
             State = PlayerState.IDLE;
+			instance_destroy(hurt_box);
         }
         break;
 		

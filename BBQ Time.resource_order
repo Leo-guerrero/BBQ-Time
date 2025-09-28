@@ -1,4 +1,8 @@
 {
   "FolderOrderSettings":[],
-  "ResourceOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"hurt_box","order":1,"path":"objects/hurt_box/hurt_box.yy",},
+    {"name":"spr_BBQ_health_bar_back","order":1,"path":"sprites/spr_BBQ_health_bar_back/spr_BBQ_health_bar_back.yy",},
+    {"name":"spr_hurt_box","order":2,"path":"sprites/spr_hurt_box/spr_hurt_box.yy",},
+  ],
 }

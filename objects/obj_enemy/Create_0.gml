@@ -22,3 +22,4 @@ maxHp = 15;
 attack_target = noone
 
 for_back_heath_bar = hp / maxHp;
+

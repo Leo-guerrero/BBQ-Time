@@ -86,6 +86,12 @@ if(place_meeting(x,y,obj_thrown_knife)){
 	
 }
 
+if(place_meeting(x,y,hurt_box)){
+	
+	var inst_hurt = instance_place(x,y,hurt_box);
+	hp -= inst_hurt.damage;
+}
+
 if(hp <= 0){
 	instance_destroy();
 }
