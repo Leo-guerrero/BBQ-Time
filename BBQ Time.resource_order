@@ -5,5 +5,6 @@
     {"name":"spr_icon_empty","order":3,"path":"sprites/spr_icon_empty/spr_icon_empty.yy",},
     {"name":"spr_icon_Recall","order":1,"path":"sprites/spr_icon_Recall/spr_icon_Recall.yy",},
     {"name":"spr_money","order":4,"path":"sprites/spr_money/spr_money.yy",},
+    {"name":"Sprite33","order":5,"path":"sprites/Sprite33/Sprite33.yy",},
   ],
 }

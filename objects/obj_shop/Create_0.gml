@@ -6,8 +6,8 @@ enum FOODS{
 	Thyme,           // 2: Decrease Time Cooldown Duration
 }
 
-depth = -y+16
 inShopMenu = false;
+image_speed = 0.5
 
 // --- GUI SETUP ---
 // Define the desired resolution for your GUI layer (e.g., 800x800)

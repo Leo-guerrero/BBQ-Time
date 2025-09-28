@@ -132,7 +132,7 @@ switch(State){
 		break;
 }
 
-if(mouse_check_button_pressed(mb_right)){
+if(mouse_check_button_pressed(mb_right) && !obj_shop.inShopMenu){
 	State = PlayerState.SHOOTING;
 }
 
@@ -184,7 +184,7 @@ if (recall_cooldown_remaining == 0) {
 		global.IsRecallKnives = true;
 		
 		var _fx_tint = fx_create("_filter_colourise");
-		fx_set_parameter(_fx_tint, "g_TintCol", [0, 0, 1, 0.01]);
+		fx_set_parameter(_fx_tint, "g_TintCol", [1, 1, 1, 0.01]);
 		fx_set_parameter(_fx_tint, "g_Intensity", (is_knife_recall) ? max(0, 1-(recallanimation/0.5)) : 0);
 		
 		if (global.KnifeCount == global.MaxKnives) {
@@ -216,7 +216,7 @@ if (timestop_cooldown_remaining == 0) {
 		}
 	
 		var _fx_tint = fx_create("_filter_colourise");
-		fx_set_parameter(_fx_tint, "g_TintCol", [0, 0, 1, 0.01]);
+		fx_set_parameter(_fx_tint, "g_TintCol", [1, 1, 1, 0.01]);
 		fx_set_parameter(_fx_tint, "g_Intensity", (is_timestop) ? 1-(timestop_elapsed/global.TimeStopDuration) : 0);
 		layer_set_fx("Dilation", _fx_tint);
 		

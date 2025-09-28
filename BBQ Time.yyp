@@ -101,6 +101,7 @@
     {"id":{"name":"spr_zombie_R","path":"sprites/spr_zombie_R/spr_zombie_R.yy",},},
     {"id":{"name":"spr_zombie_still","path":"sprites/spr_zombie_still/spr_zombie_still.yy",},},
     {"id":{"name":"Sprite23","path":"sprites/Sprite23/Sprite23.yy",},},
+    {"id":{"name":"Sprite33","path":"sprites/Sprite33/Sprite33.yy",},},
     {"id":{"name":"TreeSprites","path":"sprites/TreeSprites/TreeSprites.yy",},},
     {"id":{"name":"HouseSpriteSheet","path":"tilesets/HouseSpriteSheet/HouseSpriteSheet.yy",},},
     {"id":{"name":"MapSpritesTileSheet","path":"tilesets/MapSpritesTileSheet/MapSpritesTileSheet.yy",},},

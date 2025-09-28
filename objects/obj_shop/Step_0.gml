@@ -1,6 +1,11 @@
 
 var player = instance_find(obj_player, 0); 
 
+if (!obj_player.is_timestop) {
+	depth = -y-16
+} else {
+	depth = -501	
+}
 //player exists
 if(player != noone){ 
 	
@@ -16,6 +21,8 @@ if(player != noone){
 		
 		if(inShopMenu)
 		{
+			depth = -501
+
 			var one = keyboard_check_pressed(ord("1"));
 			var two = keyboard_check_pressed(ord("2"));
 			var three = keyboard_check_pressed(ord("3"));
@@ -47,9 +54,10 @@ if(player != noone){
 			
 			// apply blue tint
 			var _fx_tint = fx_create("_filter_colourise");
-			fx_set_parameter(_fx_tint, "g_TintCol", [0, 0, 1, 0.01]);
+			fx_set_parameter(_fx_tint, "g_TintCol", [0, 0, 0, 0.01]);
 			fx_set_parameter(_fx_tint, "g_Intensity", 1);
 			layer_set_fx("Dilation", _fx_tint);
+			obj_player.depth = -600
 		}
 	}else
 	{
@@ -59,7 +67,7 @@ if(player != noone){
 			global.DilationFactor = 1;
 			
 			var _fx_tint = fx_create("_filter_colourise");
-			fx_set_parameter(_fx_tint, "g_TintCol", [0, 0, 1, 0.01]);
+			fx_set_parameter(_fx_tint, "g_TintCol", [0, 0, 0, 0.01]);
 			fx_set_parameter(_fx_tint, "g_Intensity", 0);
 			layer_set_fx("Dilation", _fx_tint);
 		}

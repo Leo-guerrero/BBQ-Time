@@ -76,7 +76,7 @@
           3,165,166,167,-57,-2147483648,3,150,151,152,-7,-2147483648,3,138,139,140,-5,-2147483648,-3,0,-67,-2147483648,
           3,165,166,167,-7,-2147483648,3,153,154,155,-5,-2147483648,-3,0,-77,-2147483648,3,168,169,170,-1092,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"TreeSpritesTileSheet","path":"tilesets/TreeSpritesTileSheet/TreeSpritesTileSheet.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"$GMRTileLayer":"","%Name":"Tiles_1","depth":-200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_1","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":50,"SerialiseWidth":88,"TileCompressedData":[
+    {"$GMRTileLayer":"","%Name":"Tiles_1","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_1","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":50,"SerialiseWidth":88,"TileCompressedData":[
           -45,29,-2,5,-76,29,-2,5,1,29,-3,5,-77,29,-14,5,3,29,5,5,-4,29,-15,5,-47,29,1,6,-4,29,-13,5,-2,29,2,6,
           5,-4,29,-14,5,1,6,-7,5,-45,29,-13,5,-6,29,2,5,29,-22,5,-45,29,-13,5,-6,29,2,5,29,-22,5,-44,29,-4,5,1,
           6,-9,5,-8,29,-22,5,-44,29,-13,5,9,8,29,29,5,29,5,5,29,29,-22,5,-45,29,-13,5,1,29,-3,5,-4,29,-22,5,-45,
@@ -94,7 +94,7 @@
           5,-42,29,2,5,29,-44,5,-44,29,-44,5,-44,29,-44,5,-44,29,-44,5,-44,29,-44,5,-44,29,-44,5,-44,29,-44,5,
           -44,29,-23,5,-65,29,-23,5,-65,29,-23,5,-65,29,-23,5,-35,29,
         ],"TileDataFormat":1,},"tilesetId":{"name":"MapSpritesTileSheet","path":"tilesets/MapSpritesTileSheet/MapSpritesTileSheet.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":-100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
+    {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
   "name":"JasonsBedroom",
   "parent":{
