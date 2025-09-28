@@ -1,3 +1,12 @@
+if(global.GameState == GameStates.RESTART)
+{
+	global.Time = room_speed * 60 * 1;
+	global.KnifeCount = 10;	
+	global.BBQHP = 50
+	obj_bbq.hp = global.BBQHP
+	
+	global.GameState = GameStates.PLAY;
+}
 
 if(global.Time > 0 && room==JasonsBedroom && global.GameState == GameStates.PLAY){
 	global.Time--;

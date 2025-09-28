@@ -27,3 +27,4 @@ if(global.BBQHP > 40){
 } else if(global.BBQHP < 10){
 	global.HealthBarSubImage = 4;
 }
+

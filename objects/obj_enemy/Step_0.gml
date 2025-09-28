@@ -60,7 +60,10 @@ switch (cur_state)
 	
 		if(floor(image_index) >= sprite_get_number(sprite_index)-1) {
 			
+			//if place_meeting(x, y, attack_target) {
+			//show_debug_message(attack_target)
 			if instance_place(x, y, attack_target) {
+				
 				attack_target.hp -= BASE_DMG
 			}
 			
