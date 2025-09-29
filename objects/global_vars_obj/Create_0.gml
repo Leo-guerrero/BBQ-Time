@@ -1,4 +1,4 @@
-global.Time = room_speed * 60 * 1;
+global.Time = room_speed * 60 * 2;
 //global.Time = room_speed * 2 * 1;
 
 global.TimeDisplay = global.Time / 60 ;
