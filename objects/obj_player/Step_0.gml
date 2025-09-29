@@ -27,7 +27,7 @@ down  = keyboard_check(ord("S"));
 left  = keyboard_check(ord("A"));
 right = keyboard_check(ord("D"));
 attack = mouse_check_button_pressed(mb_left);
-run = keyboard_check(vk_shift);
+run = false//keyboard_check(vk_shift);
 timestop = keyboard_check(vk_space)
 recallknives = keyboard_check(ord("F"))
 
