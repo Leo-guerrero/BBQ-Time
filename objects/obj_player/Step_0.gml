@@ -3,6 +3,18 @@ if(global.GameState == GameStates.GAMEOVER){
 	exit;
 }
 
+if (global.PlayerRespawnDelay != 0) {
+	global.PlayerRespawnDelay -= room_speed/3600
+	if (global.PlayerRespawnDelay < 0) {
+		global.PlayerRespawnDelay = 0
+	}
+	if (global.PlayerRespawnDelay == 0) {
+		visible = true
+		hp = global.MaxPlayerHp	
+	}
+	exit;
+}
+
 if (!is_timestop) {
 	depth = -y
 } else {
@@ -171,9 +183,7 @@ if (!is_knife_recall) {
 
 
 // handle knife recall
-if (obj_shop.inShopMenu) {
-	exit	
-}
+if (!obj_shop.inShopMenu) {
 
 if (recall_cooldown_remaining == 0) {
 	
@@ -224,13 +234,6 @@ if (timestop_cooldown_remaining == 0) {
 	} 
 }
 
-global.CurrentPlayerHP = hp;
-
-if(global.CurrentPlayerHP <= 0){
-	global.PlayerRespawnDelay = room_speed * 5;
-	instance_destroy();
-}
-
 if (timestop_elapsed >= global.TimeStopDuration) {
 	is_timestop = false;
 	global.DilationFactor = 1
@@ -239,6 +242,18 @@ if (timestop_elapsed >= global.TimeStopDuration) {
 } else {
 	timestop_cooldown_remaining = max(0, timestop_cooldown_remaining - room_speed/3600)
 }
+
+}
+
+global.CurrentPlayerHP = hp;
+
+if(global.CurrentPlayerHP <= 0){
+	global.PlayerRespawnDelay = 5;
+	visible = false;
+	x = obj_bbq.x	
+	y = obj_bbq.y
+}
+
 
 
 
