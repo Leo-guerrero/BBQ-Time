@@ -8,6 +8,10 @@ if(global.GameState == GameStates.RESTART)
 	global.GameState = GameStates.PLAY;
 }
 
+if(!audio_is_playing(main_theme) && room == JasonsBedroom){
+	audio_play_sound(main_theme, 10, false);
+}
+
 if(global.Time > 0 && room==JasonsBedroom && global.GameState == GameStates.PLAY && !obj_shop.inShopMenu){
 	global.Time--;
 }
