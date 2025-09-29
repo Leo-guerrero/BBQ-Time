@@ -1,13 +1,14 @@
 
 var player = instance_find(obj_player, 0); 
 
-if (!obj_player.is_timestop) {
-	depth = -y-16
-} else {
-	depth = -501	
-}
+
 //player exists
 if(player != noone){ 
+	if (!player.is_timestop) {
+		depth = -y-16
+	} else {
+		depth = -501	
+	}
 	
 	//player close to shop
 	if(distance_to_point(player.x, player.y) < 20 && !obj_player.is_timestop)
