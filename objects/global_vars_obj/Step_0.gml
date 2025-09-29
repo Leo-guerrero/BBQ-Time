@@ -1,9 +1,26 @@
 if(global.GameState == GameStates.RESTART)
 {
 	global.Time = room_speed * 60 * 1;
-	global.KnifeCount = 10;	
-	global.BBQHP = 50
+	obj_player.visible = true
+	global.Coins = 0
+	
+	global.TimeStopDuration = 5;//how long you can use the ability
+	global.TimeStopCoolDownDuration = 15; //time between using the ability again
+
+	global.RecallKnivesCooldown = 10;
+	global.IsRecallKnives = false;
+	global.MaxKnives = 10;
+	global.KnifeCount = global.MaxKnives;
+
+	global.Coins = 0
+
+	global.PlayerFace = "DOWN";
+	global.BBQHP = 50;
 	obj_bbq.hp = global.BBQHP
+	global.StaticBBQHP = 10 * 50;
+	global.HealthBarSubImage = 0;
+
+	global.DilationFactor = 1;
 	
 	global.GameState = GameStates.PLAY;
 }
@@ -25,13 +42,4 @@ if (keyboard_check_pressed(vk_f11)) {
     window_set_fullscreen(fullscreen);
 }
 
-//respawn Player
 
-if(global.PlayerRespawnDelay > 0){
-	global.PlayerRespawnDelay--;
-}
-
-if(!instance_exists(obj_player) && room == JasonsBedroom && global.PlayerRespawnDelay <= 0){
-	global.CurrentPlayerHP = 100;
-	instance_create_depth(767,322,-999,obj_player);
-}
