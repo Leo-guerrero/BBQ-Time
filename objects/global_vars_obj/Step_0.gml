@@ -1,6 +1,6 @@
 if(global.GameState == GameStates.RESTART)
 {
-	global.Time = room_speed * 60 * 1;
+	global.Time = room_speed * 60 * 2;
 	obj_player.visible = true
 	global.Coins = 0
 	
