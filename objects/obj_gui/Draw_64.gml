@@ -22,6 +22,10 @@ if (global.GameState == GameStates.GAMEOVER) {
     draw_set_alpha(0.6); draw_set_color(c_black);
     draw_rectangle(0, 0, gw, gh, false);
     draw_set_alpha(1);
+	
+	if (global.BBQHP <= 0){
+        end_reason = "Rotten BBQ!"
+    }
 
     // header + rank text
     draw_set_color(c_yellow);
