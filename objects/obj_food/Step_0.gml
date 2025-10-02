@@ -1,6 +1,8 @@
 
 var player = instance_find(obj_player, 0); 
 
+depth = -400;
+
 // Check if the food has a valid owner (i.e., the player instance)
 if (player != noone)
 {
@@ -22,11 +24,12 @@ if (player != noone)
 	}
 	
 	if(!foodIsDropped){
-		// Define the offset for the 'hand' position (adjust these values as needed)
-	    var offset_y = -10; 
+		// Define the offset for the 'hand' position
+		var offset_x = -2;
+	    var offset_y = 6; 
     
 	    // Update the food's position to match the owner's position plus the offset
-	    x = player.x;
+	    x = player.x + offset_x;
 	    y = player.y + offset_y;
 		
 		// Find the unique instance ID of the closest 'obj_target' to the current instance's (x, y)
