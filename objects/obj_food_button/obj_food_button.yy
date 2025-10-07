@@ -1,13 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_food",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_food_button",
+  "eventList":[],
   "managed":true,
-  "name":"obj_food",
+  "name":"obj_food_button",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -32,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Potato",
-    "path":"sprites/spr_Potato/spr_Potato.yy",
+    "name":"spr_button",
+    "path":"sprites/spr_button/spr_button.yy",
   },
   "spriteMaskId":null,
   "visible":true,

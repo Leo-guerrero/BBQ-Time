@@ -27,36 +27,31 @@ if(player != noone){
 			var one = keyboard_check_pressed(ord("1"));
 			var two = keyboard_check_pressed(ord("2"));
 			var three = keyboard_check_pressed(ord("3"));
-		
-			//Potato
-			if(one){
-				with(obj_bbq)
-				{
-					if (global.Coins >= 10){
-						obj_bbq.hp += 10;
-						obj_bbq.hp = min(obj_bbq.hp, 50);
-						global.Coins -= 10
-					}
-				}
-			}
 			
-			// Salt
-			else if(two)
+			if(one and player.current_food == noone and global.Currency >= 40)
 			{
-				if (global.Coins >= 15){
-					global.RecallKnivesCooldown= max(5, global.RecallKnivesCooldown-1)  
-					global.Coins -= 15
-				}
+				show_debug_message("Grabbed Salt and Pepper");
+				addFoodToPlayer(player, FOODS.SaltAndPepper);
+				
+				// offsetting the food to the player hands is in the food script
+				
+				global.Currency-=20;
 			}
-	
-			// Thyme 
-			else if(three)
+			else if(two and player.current_food == noone and global.Currency >= 10)
+			{				
+				show_debug_message("Grabbed Potato");
+				addFoodToPlayer(player, FOODS.Potato);
+				
+				// offsetting the food to the player hands is in the food script
+				
+				global.Currency-=40;
+			}
+			else if(three and player.current_food == noone and global.Currency >= 50)
 			{
-				if (global.Coins >= 20){
-					global.TimeStopCoolDownDuration = max(5, global.TimeStopCoolDownDuration-1)  
-					global.TimeStopDuration += 1
-					global.Coins -= 20
-				}
+				show_debug_message("Grabbed Thyme");
+				addFoodToPlayer(player, FOODS.Thyme);
+
+				global.Currency-=50;
 			}
 			
 			// apply blue tint

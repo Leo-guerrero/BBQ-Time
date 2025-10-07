@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"ShopDealer",
-    "path":"sprites/ShopDealer/ShopDealer.yy",
+    "name":"Player_down_spr",
+    "path":"sprites/Player_down_spr/Player_down_spr.yy",
   },
   "spriteMaskId":null,
   "visible":true,

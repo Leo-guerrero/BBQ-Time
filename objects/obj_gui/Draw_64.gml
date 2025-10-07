@@ -47,8 +47,8 @@ if (state == GameState.PAUSE) {
         room_goto(room_menu);    // <- replace with your menu room asset if different
     }
 }
-
 // End-game overlay
+
 if (global.GameState == GameStates.GAMEOVER) {
     // update rank
     if (global.BBQHP == 50) {
@@ -64,7 +64,6 @@ if (global.GameState == GameStates.GAMEOVER) {
     } else {
         global.Rank = "FAIL";
     }
-    
     // translucent dim
     draw_set_alpha(0.6); draw_set_color(c_black);
     draw_rectangle(0, 0, gw, gh, false);
