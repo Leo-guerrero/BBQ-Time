@@ -12,8 +12,6 @@ if(global.GameState == GameStates.RESTART)
 	global.MaxKnives = 10;
 	global.KnifeCount = global.MaxKnives;
 
-	global.Coins = 0
-
 	global.PlayerFace = "DOWN";
 	global.BBQHP = 50;
 	obj_bbq.hp = global.BBQHP

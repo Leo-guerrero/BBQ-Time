@@ -100,7 +100,7 @@ if(place_meeting(x,y,hurt_box)){
 }
 
 if(hp <= 0){
-	global.Currency +=100;
+	global.Coins +=100;
 	instance_destroy();
 }
 

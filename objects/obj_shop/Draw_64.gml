@@ -2,7 +2,8 @@
 if (inShopMenu)
 {
     // 1. Draw the background rectangle (the black square)
-    draw_set_colour(c_black);
+	draw_set_font(fnt_jason);
+    draw_set_colour(c_white);
     draw_set_alpha(0.5)
 
     // Draw a FILLED rectangle from the calculated top-left (gui_x, gui_y)
